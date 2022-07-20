@@ -1,0 +1,6 @@
+# Clipping
+
+
+
+#### Goal:
+

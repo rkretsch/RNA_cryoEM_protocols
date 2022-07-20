@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RNA CryoEM Protocols &#8212; RNA cryoEM protocols</title>
+    <title>PCR assembly &#8212; RNA cryoEM protocols</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -50,7 +50,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="PCR assembly" href="pcr_assembly.html" />
+    <link rel="next" title="in vitro transcription (IVT)" href="IVT.html" />
+    <link rel="prev" title="RNA CryoEM Protocols" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -88,8 +89,8 @@ const thebe_selector_output = ".output, .cell_output"
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
- <li class="toctree-l1 current">
-  <a class="reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
    RNA CryoEM Protocols
   </a>
  </li>
@@ -99,9 +100,9 @@ const thebe_selector_output = ".output, .cell_output"
   Preparing small RNA samples
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="pcr_assembly.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    PCR assembly
   </a>
  </li>
@@ -210,7 +211,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/intro.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/pcr_assembly.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -230,7 +231,7 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fpcr_assembly.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -257,9 +258,51 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#basic-protocols-for-rna-cryoem-in-das-chiu-s2c2">
-   Basic protocols for RNA cryoEM in Das/Chiu/S2C2.
+  <a class="reference internal nav-link" href="#goal-create-the-dsdna-that-will-be-the-template-to-create-your-rna-of-interest">
+   Goal: Create the dsDNA that will be the template to create your RNA of interest.
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-notes">
+   General notes:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#method">
+   Method
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-primer-mastermix">
+     1a. Primer MasterMix
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#b-physion-mastermix-and-pcr-preparation">
+     1b. Physion MasterMix and PCR preparation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#c-pcr-cycles">
+     1c. PCR cycles
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#d-agarose-gel">
+     1d. Agarose gel
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#e-dsdna-column-purification">
+     1e. dsDNA column purification
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -271,7 +314,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>RNA CryoEM Protocols</h1>
+                <h1>PCR assembly</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -282,9 +325,51 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#basic-protocols-for-rna-cryoem-in-das-chiu-s2c2">
-   Basic protocols for RNA cryoEM in Das/Chiu/S2C2.
+  <a class="reference internal nav-link" href="#goal-create-the-dsdna-that-will-be-the-template-to-create-your-rna-of-interest">
+   Goal: Create the dsDNA that will be the template to create your RNA of interest.
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-notes">
+   General notes:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#method">
+   Method
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-primer-mastermix">
+     1a. Primer MasterMix
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#b-physion-mastermix-and-pcr-preparation">
+     1b. Physion MasterMix and PCR preparation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#c-pcr-cycles">
+     1c. PCR cycles
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#d-agarose-gel">
+     1d. Agarose gel
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#e-dsdna-column-purification">
+     1e. dsDNA column purification
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -295,19 +380,67 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="rna-cryoem-protocols">
-<h1>RNA CryoEM Protocols<a class="headerlink" href="#rna-cryoem-protocols" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="basic-protocols-for-rna-cryoem-in-das-chiu-s2c2">
-<h2>Basic protocols for RNA cryoEM in Das/Chiu/S2C2.<a class="headerlink" href="#basic-protocols-for-rna-cryoem-in-das-chiu-s2c2" title="Permalink to this headline">¶</a></h2>
-<p><strong>Contact: Rachael Kretsch; rkretsch “at” stanford “dot” edu</strong></p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="pcr-assembly">
+<h1>PCR assembly<a class="headerlink" href="#pcr-assembly" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="goal-create-the-dsdna-that-will-be-the-template-to-create-your-rna-of-interest">
+<h2>Goal: Create the dsDNA that will be the template to create your RNA of interest.<a class="headerlink" href="#goal-create-the-dsdna-that-will-be-the-template-to-create-your-rna-of-interest" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="toctree-wrapper compound">
+<div class="section" id="general-notes">
+<h2>General notes:<a class="headerlink" href="#general-notes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>If the assembly fails, first try another polymerase.</p></li>
+</ul>
 </div>
-<div class="toctree-wrapper compound">
+<div class="section" id="introduction">
+<h2>Introduction:<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>We need to go from the cheap short ssDNA oligos we ordered to the dsDNA which will transcribe to create our RNA of interest. To do this we conduct an PCR assembly reaction. In short, our oligos overlap with each other so they can anneal to each other. This creates multiple primed sites for PCR reactions. The complete dsDNA will be completed in the extension steps. Using a construct designed by primerize this normally succeeds in making the dsDNA we want. Check the assembly with a gel confirming the expected length dsDNA is present and checking for side-products. If there are significant side-products you may want to gel-purify the correct sized products, however it may be ok to proceed if you will exclude these products in dPAGE purification of the RNA. Note, if you have a epPCR primer site at the end of your construct you will want to remove this before transcribing the RNA for cryo-EM, this requires a digest, another column purification, and checking on the gel to see the size has reduced by the expected amount. Finally, we need to quantify how much dsDNA we have in order to calculate the amount to use for the transcription step.</p>
+<p>Note in future, if you have this complete dsDNA construct, you can amplify it using traditional PCR and the first forward primer and last reverse primer.</p>
 </div>
-<div class="toctree-wrapper compound">
+<div class="section" id="method">
+<h2>Method<a class="headerlink" href="#method" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="a-primer-mastermix">
+<h3>1a. Primer MasterMix<a class="headerlink" href="#a-primer-mastermix" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Check primer concentration (often ~100µM), label primers on cap.</p></li>
+<li><p>Create a MM with 12.5µM first and last primer (eg 50µL), and 0.125µM others (eg 0.5µL) (eg in 400µL total). You can save MM for future reactions, store at -20°C. [<strong>primer MM</strong>].</p></li>
+</ol>
 </div>
-<div class="toctree-wrapper compound">
+<div class="section" id="b-physion-mastermix-and-pcr-preparation">
+<h3>1b. Physion MasterMix and PCR preparation<a class="headerlink" href="#b-physion-mastermix-and-pcr-preparation" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Before starting, make sure there is a thermocycler available and reserve with tape.</p></li>
+<li><p>Each standard reaction is 50µL, recommend 4 standard reactions per assembly. Label PCR tubes for each assembly. <em>Recognize the capacity of your thermocycler, if it is 100µL and you want 4 standard reactions per assembly, each assembly will need to be done in 2 PCR tubes (100µL each, 200µL total).</em></p></li>
+<li><p>For each assembly add 16µL of [<strong>primer MM</strong>] per standard reaction (eg 64µL for 4 standard reactions) directly to the PCR tubes.</p></li>
+<li><p>Make a Phusion MM for 1.1x the number of reactions you need (number of assemblies x number of standard reactions per assembly). Per reaction you need:
+22µL ddH2O
+10µL HF-buffer
+1µL dNTPs (10mM)
+1µL Phusion polymerase *<em>add last minute</em>
+Vortex and spin down.</p></li>
+<li><p>Add 34µL of Phusion MM per standard reaction to each of your PCR tubes.</p></li>
+<li><p>Vortex and spin down. Immediately place in thermocycler</p></li>
+</ol>
+</div>
+<div class="section" id="c-pcr-cycles">
+<h3>1c. PCR cycles<a class="headerlink" href="#c-pcr-cycles" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Set the following program on thermocycler (likely saved)
+98oC 30sec
+35x[98oC 10sec
+64oC 30sec <em>(check annealing temp of oligos, can go a few</em> <em>°C above min Tm)</em>
+72oC 30sec] <em>(may need to extend if longer construct, 15-30 per kb)</em>
+72oC 10min
+12oC inf</p></li>
+</ol>
+</div>
+<div class="section" id="d-agarose-gel">
+<h3>1d. Agarose gel<a class="headerlink" href="#d-agarose-gel" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="e-dsdna-column-purification">
+<h3>1e. dsDNA column purification<a class="headerlink" href="#e-dsdna-column-purification" title="Permalink to this headline">¶</a></h3>
+<p>sub note is DNA gel purificaition</p>
+<p>TODO different assembly enzymes</p>
+</div>
 </div>
 </div>
 
@@ -335,11 +468,18 @@ const thebe_selector_output = ".output, .cell_output"
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="pcr_assembly.html" title="next page">
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">RNA CryoEM Protocols</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="IVT.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">PCR assembly</p>
+        <p class="prev-next-title"><em>in vitro</em> transcription (IVT)</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
