@@ -16,7 +16,41 @@ We need to go from the cheap short ssDNA oligos we ordered to the dsDNA which wi
 
 Note in future, if you have this complete dsDNA construct, you can amplify it using traditional PCR and the first forward primer and last reverse primer.
 
+#### Material: 
 
+- Oligos from IDT
+
+- ddH2O
+
+- dNTPs
+
+- Polymerase and associated buffer (e.g. Phusion and 5x HF Buffer)
+
+- ~1.5hr on thermocycler
+
+- TBE 1x ~150mL
+
+- SYBR Safe
+
+- dsDNA ladder
+
+- 6x Loading dye
+
+- Agarose
+
+- Gel doc
+
+- QIAquick spin columns
+
+- Buffer PB*
+
+- Buffer PE* or 80% EtOH
+
+- Centrifuge
+
+- Nanodrop
+
+  \* recipes available
 
 ### Method
 

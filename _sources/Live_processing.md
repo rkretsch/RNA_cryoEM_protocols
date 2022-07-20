@@ -14,3 +14,4 @@ Cryosparc live can be accesed http://localhost:39106 (if you normal cryosparc po
 
 
 
+For cryosparc patch-motion with falcon camera, you will need to excldue final frame (eg with 40 frames, put 39 as it counts from 0)
