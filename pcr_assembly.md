@@ -56,8 +56,14 @@ Note in future, if you have this complete dsDNA construct, you can amplify it us
 
 #### 1a. Primer MasterMix
 
+```{toggle}
+
+
 1. Check primer concentration (often ~100µM), label primers on cap.
 2. Create a MM with 12.5µM first and last primer (eg 50µL), and 0.125µM others (eg 0.5µL) (eg in 400µL total). You can save MM for future reactions, store at -20°C. [**primer MM**].
+
+
+```
 
 #### 1b. Physion MasterMix and PCR preparation
 
