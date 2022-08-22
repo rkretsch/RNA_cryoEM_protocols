@@ -1,0 +1,540 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PCR assembly &#8212; RNA cryoEM protocols</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="in vitro transcription (IVT)" href="IVT.html" />
+    <link rel="prev" title="RNA CryoEM Protocols" href="intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/RNA_cryoEM_logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">RNA cryoEM protocols</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   RNA CryoEM Protocols
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Preparing small RNA samples
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   PCR assembly
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="IVT.html">
+   <em>
+    in vitro
+   </em>
+   transcription (IVT)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Grid preperation
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Folding.html">
+   Folding
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Freezing.html">
+   Freezing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Clipping.html">
+   Clipping
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Screening and data collection
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Screening.html">
+   Screening
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Alignment.html">
+   Alignmnet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Data_collection.html">
+   Data Collection
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Data processing
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Live_processing.html">
+   Live Processing
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/pcr_assembly.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fpcr_assembly.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goal-create-the-dsdna-that-will-be-the-template-to-create-your-rna-of-interest">
+   Goal: Create the dsDNA that will be the template to create your RNA of interest.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-notes">
+   General notes:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#material">
+   Material:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#method">
+   Method
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-primer-mastermix">
+     1a. Primer MasterMix
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#b-physion-mastermix-and-pcr-preparation">
+     1b. Physion MasterMix and PCR preparation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#c-pcr-cycles">
+     1c. PCR cycles
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#d-agarose-gel">
+     1d. Agarose gel
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#e-dsdna-column-purification">
+     1e. dsDNA column purification
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>PCR assembly</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goal-create-the-dsdna-that-will-be-the-template-to-create-your-rna-of-interest">
+   Goal: Create the dsDNA that will be the template to create your RNA of interest.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-notes">
+   General notes:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#material">
+   Material:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#method">
+   Method
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-primer-mastermix">
+     1a. Primer MasterMix
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#b-physion-mastermix-and-pcr-preparation">
+     1b. Physion MasterMix and PCR preparation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#c-pcr-cycles">
+     1c. PCR cycles
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#d-agarose-gel">
+     1d. Agarose gel
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#e-dsdna-column-purification">
+     1e. dsDNA column purification
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="pcr-assembly">
+<h1>PCR assembly<a class="headerlink" href="#pcr-assembly" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="goal-create-the-dsdna-that-will-be-the-template-to-create-your-rna-of-interest">
+<h2>Goal: Create the dsDNA that will be the template to create your RNA of interest.<a class="headerlink" href="#goal-create-the-dsdna-that-will-be-the-template-to-create-your-rna-of-interest" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="general-notes">
+<h2>General notes:<a class="headerlink" href="#general-notes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>If the assembly fails, first try another polymerase.</p></li>
+</ul>
+</div>
+<div class="section" id="introduction">
+<h2>Introduction:<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>We need to go from the cheap short ssDNA oligos we ordered to the dsDNA which will transcribe to create our RNA of interest. To do this we conduct an PCR assembly reaction. In short, our oligos overlap with each other so they can anneal to each other. This creates multiple primed sites for PCR reactions. The complete dsDNA will be completed in the extension steps. Using a construct designed by primerize this normally succeeds in making the dsDNA we want. Check the assembly with a gel confirming the expected length dsDNA is present and checking for side-products. If there are significant side-products you may want to gel-purify the correct sized products, however it may be ok to proceed if you will exclude these products in dPAGE purification of the RNA. Note, if you have a epPCR primer site at the end of your construct you will want to remove this before transcribing the RNA for cryo-EM, this requires a digest, another column purification, and checking on the gel to see the size has reduced by the expected amount. Finally, we need to quantify how much dsDNA we have in order to calculate the amount to use for the transcription step.</p>
+<p>Note in future, if you have this complete dsDNA construct, you can amplify it using traditional PCR and the first forward primer and last reverse primer.</p>
+</div>
+<div class="section" id="material">
+<h2>Material:<a class="headerlink" href="#material" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>Oligos from IDT</p></li>
+<li><p>ddH2O</p></li>
+<li><p>dNTPs</p></li>
+<li><p>Polymerase and associated buffer (e.g. Phusion and 5x HF Buffer)</p></li>
+<li><p>~1.5hr on thermocycler</p></li>
+<li><p>TBE 1x ~150mL</p></li>
+<li><p>SYBR Safe</p></li>
+<li><p>dsDNA ladder</p></li>
+<li><p>6x Loading dye</p></li>
+<li><p>Agarose</p></li>
+<li><p>Gel doc</p></li>
+<li><p>QIAquick spin columns</p></li>
+<li><p>Buffer PB*</p></li>
+<li><p>Buffer PE* or 80% EtOH</p></li>
+<li><p>Centrifuge</p></li>
+<li><p>Nanodrop</p>
+<p>* recipes available</p>
+</li>
+</ul>
+</div>
+<div class="section" id="method">
+<h2>Method<a class="headerlink" href="#method" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="a-primer-mastermix">
+<h3>1a. Primer MasterMix<a class="headerlink" href="#a-primer-mastermix" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Check primer concentration (often ~100µM), label primers on cap.</p></li>
+<li><p>Create a MM with 12.5µM first and last primer (eg 50µL), and 0.125µM others (eg 0.5µL) (eg in 400µL total). You can save MM for future reactions, store at -20°C. [<strong>primer MM</strong>].</p></li>
+</ol>
+</div>
+<div class="section" id="b-physion-mastermix-and-pcr-preparation">
+<h3>1b. Physion MasterMix and PCR preparation<a class="headerlink" href="#b-physion-mastermix-and-pcr-preparation" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Before starting, make sure there is a thermocycler available and reserve with tape.</p></li>
+<li><p>Each standard reaction is 50µL, recommend 4 standard reactions per assembly. Label PCR tubes for each assembly. <em>Recognize the capacity of your thermocycler, if it is 100µL and you want 4 standard reactions per assembly, each assembly will need to be done in 2 PCR tubes (100µL each, 200µL total).</em></p></li>
+<li><p>For each assembly add 16µL of [<strong>primer MM</strong>] per standard reaction (eg 64µL for 4 standard reactions) directly to the PCR tubes.</p></li>
+<li><p>Make a Phusion MM for 1.1x the number of reactions you need (number of assemblies x number of standard reactions per assembly). Per reaction you need:
+22µL ddH2O
+10µL HF-buffer
+1µL dNTPs (10mM)
+1µL Phusion polymerase *<em>add last minute</em>
+Vortex and spin down.</p></li>
+<li><p>Add 34µL of Phusion MM per standard reaction to each of your PCR tubes.</p></li>
+<li><p>Vortex and spin down. Immediately place in thermocycler</p></li>
+</ol>
+</div>
+<div class="section" id="c-pcr-cycles">
+<h3>1c. PCR cycles<a class="headerlink" href="#c-pcr-cycles" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Set the following program on thermocycler (likely saved)
+98oC 30sec
+35x[98oC 10sec
+64oC 30sec <em>(check annealing temp of oligos, can go a few</em> <em>°C above min Tm)</em>
+72oC 30sec] <em>(may need to extend if longer construct, 15-30 per kb)</em>
+72oC 10min
+12oC inf</p></li>
+</ol>
+</div>
+<div class="section" id="d-agarose-gel">
+<h3>1d. Agarose gel<a class="headerlink" href="#d-agarose-gel" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="e-dsdna-column-purification">
+<h3>1e. dsDNA column purification<a class="headerlink" href="#e-dsdna-column-purification" title="Permalink to this headline">¶</a></h3>
+<p>sub note is DNA gel purificaition</p>
+<p>TODO different assembly enzymes</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">RNA CryoEM Protocols</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="IVT.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><em>in vitro</em> transcription (IVT)</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Rachael Kretsch<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
