@@ -1,0 +1,23 @@
+:root {
+    --sd-color-primary: #FFC0CB;
+    --sd-color-primary-highlight: #da864e;
+    --sd-color-secondary: #FFC0CB;
+    --sd-color-secondary-highlight: #4e88da;
+    --pst-color-primary: 0, 0, 202;
+    --color-warning: 200, 30, 200;
+}
+
+.bg-jb-one {
+    background-color: #FFC0CB;
+}
+
+.admonition-extra-credit {
+    border-left-color: rgba(0, 246, 16, 1);
+}
+.admonition-extra-credit .admonition-title {
+    background-color: rgba(54, 2, 16, .1);
+}
+.admonition-extra-credit .admonition-title:before {
+    color: rgba(200, 246, 16, 1);
+    content: '\f19d';
+}
