@@ -20,38 +20,38 @@ parts:
     - file: Data_collection
   - caption: Data processing
     chapters:
-    - file: Live_processing
+    - file: data_processing/Live_processing
       sections:
-      - file: cryosparc_live
-      - file: S2C2_pipeline
-    - file: Pre_processing
+      - file: data_processing/cryosparc_live
+      - file: data_processing/S2C2_pipeline
+    - file: data_processing/Pre_processing
       sections:
-      - file: motion_correction
-      - file: ctf_estimation
-      - file: micrograph_curation
-    - file: Particle_picking
+      - file: data_processing/motion_correction
+      - file: data_processing/ctf_estimation
+      - file: data_processing/micrograph_curation
+    - file: data_processing/Particle_picking
       sections:
-      - file: blob_picking
-      - file: template_picking
-      - file: deep_picking
-      - file: 2D_classification
-      - file: paticle_picking_strategies
-    - file: 3D_reconstruction
+      - file: data_processing/blob_picking
+      - file: data_processing/template_picking
+      - file: data_processing/deep_picking
+      - file: data_processing/2D_classification
+      - file: data_processing/paticle_picking_strategies
+    - file: data_processing/3D_reconstruction
       sections:
-      - file: ab_initio
-      - file: 3D_classification
-      - file: 3D_refine
-      - file: sharpening
-      - file: 3D_reconstruction_strategies
-    - file: Using_SDF
+      - file: data_processing/ab_initio
+      - file: data_processing/3D_classification
+      - file: data_processing/3D_refine
+      - file: data_processing/sharpening
+      - file: data_processing/3D_reconstruction_strategies
+    - file: data_processing/Software
       sections:
-      - file: acquire_sdf
-      - file: relion
-      - file: cryosparc
-      - file: transfer_relion_cryosparc
-      - file: cryoDRGN
-      - file: topaz
-      - file: cryolo
+      - file: data_processing/acquire_sdf
+      - file: data_processing/relion
+      - file: data_processing/cryosparc
+      - file: data_processing/transfer_relion_cryosparc
+      - file: data_processing/cryoDRGN
+      - file: data_processing/topaz
+      - file: data_processing/cryolo
   #- caption: Modeling
   #- caption: Validation
   #  sections:
