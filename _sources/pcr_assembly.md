@@ -123,11 +123,15 @@ _Visualize gel:_
 14. Once bands are sufficiently discernable, stop the run, take the gel from the buffer and image it on a UV-transilluminator using the UV (SYBR) setting. 
 
 :::
-:::{dropdown} {material-regular}`format_list_numbered`  5. dsDNA column purification
+
+
+
+::::{dropdown} {material-regular}`format_list_numbered`  5. dsDNA column purification
 
 :::{warning}
-If DNA gel reveals multiple bands, excise the band of interest and use the Qiagen QiaQuick Gel Extraction Kit to gel-purify the band before IVT.
+If DNA gel reveals multiple bands, excise the band of interest and use the Qiagen QiaQuick Gel Extraction Kit to gel-purify the 	band before IVT.
 :::
+
 If you have multiple tubes of the same sample you can mix these all together first. If you may have more than 10µg of DNA, split the sample into multiple columns.
 
 _Bind DNA to the membrane:_
@@ -146,7 +150,7 @@ _Elute DNA:_
 7. Add 30µL ddH2O directly to the membrane. Wait 10min. Spin at 10,000 for 1min. Discard column not flowthrough. 
 8. Save DNA in -20oC. [dsDNA]
 
-:::
+::::
 
 :::{dropdown} {material-regular}`format_list_numbered`  6. dsDNA Quantification
 1. Bring 1µL of sample in PCR tube. If you bring your own pipette to the non-RNAse free nanodrop, wipe it off with RNAse zap before using again.
