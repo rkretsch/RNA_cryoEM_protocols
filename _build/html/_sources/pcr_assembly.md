@@ -1,25 +1,21 @@
-# PCR assembly
+##### PCR assembly
 
 
 
-##### Goal: Create the dsDNA that will be the template to create your RNA of interest. 
+__Goal: Create the dsDNA that will be the template to create your RNA of interest. __
 
-```{admonition} hiu
-:class: toggle
 
-_TETST_
+###### Introduction: 
 
-```
+We need to go from the cheap short single-stranded DNA (ssDNA) oligos we ordered to the dsDNA which will transcribe to create our RNA of interest. To do this we conduct an __PCR assembly reaction__. In short, our oligos overlap with each other so they can anneal to each other. This creates multiple primed sites for PCR reactions. The complete double-standed DNA (dsDNA) will be completed in the extension steps. Using a construct designed by primerize this normally succeeds in making the dsDNA we want. Check the assembly with a gel confirming the expected length dsDNA is present and checking for side-products.  Finally, we need to quantify how much dsDNA we have in order to calculate the amount to use for the transcription step.
 
-:::{hint}
-If the assembly fails, first try another polymerase.
-:::
-##### Introduction: 
-
-We need to go from the cheap short ssDNA oligos we ordered to the dsDNA which will transcribe to create our RNA of interest. To do this we conduct an PCR assembly reaction. In short, our oligos overlap with each other so they can anneal to each other. This creates multiple primed sites for PCR reactions. The complete dsDNA will be completed in the extension steps. Using a construct designed by primerize this normally succeeds in making the dsDNA we want. Check the assembly with a gel confirming the expected length dsDNA is present and checking for side-products. If there are significant side-products you may want to gel-purify the correct sized products, however it may be ok to proceed if you will exclude these products in dPAGE purification of the RNA. Note, if you have a epPCR primer site at the end of your construct you will want to remove this before transcribing the RNA for cryo-EM, this requires a digest, another column purification, and checking on the gel to see the size has reduced by the expected amount. Finally, we need to quantify how much dsDNA we have in order to calculate the amount to use for the transcription step.
 
 :::{note}
 Once you have this complete dsDNA construct, you can amplify it using traditional PCR and the first forward primer and last reverse primer.
+:::
+
+:::{hint}
+If the assembly fails, first try another polymerase.
 :::
 
 :::{dropdown} {material-regular}`list` Materials: 
@@ -122,12 +118,19 @@ _Visualize gel:_
 
 14. Once bands are sufficiently discernable, stop the run, take the gel from the buffer and image it on a UV-transilluminator using the UV (SYBR) setting. 
 
-:::
-:::{dropdown} {material-regular}`format_list_numbered`  5. dsDNA column purification
-
 :::{warning}
+If there are significant side-products you may want to gel-purify the correct sized products, however it may be ok to proceed if you will exclude these products in dPAGE purification of the RNA. 
 If DNA gel reveals multiple bands, excise the band of interest and use the Qiagen QiaQuick Gel Extraction Kit to gel-purify the band before IVT.
 :::
+
+:::
+
+
+
+::::{dropdown} {material-regular}`format_list_numbered`  5. dsDNA column purification
+
+
+
 If you have multiple tubes of the same sample you can mix these all together first. If you may have more than 10µg of DNA, split the sample into multiple columns.
 
 _Bind DNA to the membrane:_
@@ -146,7 +149,7 @@ _Elute DNA:_
 7. Add 30µL ddH2O directly to the membrane. Wait 10min. Spin at 10,000 for 1min. Discard column not flowthrough. 
 8. Save DNA in -20oC. [dsDNA]
 
-:::
+::::
 
 :::{dropdown} {material-regular}`format_list_numbered`  6. dsDNA Quantification
 1. Bring 1µL of sample in PCR tube. If you bring your own pipette to the non-RNAse free nanodrop, wipe it off with RNAse zap before using again.
@@ -156,8 +159,12 @@ _Elute DNA:_
 5. Check for contaminants. Expect A260/A280~1.8. Do not want a 230 shoulder.  Generally, if A260 above 70 needs to dilute. 
 6. Write down: A260, A280, and Reported ng/µL. 
 7. Calculate concentration: DNA (μM) = [A260 x 50,000] / [660 x length (bp)]
-
 :::
+
+:::{note}
+Note, if you have a epPCR primer site at the end of your construct you will want to remove this before transcribing the RNA for cryo-EM, this requires a digest, another column purification, and checking on the gel to see the size has reduced by the expected amount.
+:::
+
 :::{dropdown} {material-regular}`format_list_numbered` 7. DNA gel purification
 1. Image the gel under blue light, mark the band with a sharpie (red).
 2. Weigh an empty 1.5 mL microcentrifuge tube.
@@ -176,7 +183,11 @@ _Elute DNA:_
 15. Add 30 uL ddH2O to the membrane. Wait 10 min. Spin at 10,000 for 1 min. Discard column not flowthrough.
 16. Save DNA in -20C __[dsDNA]__
 
+
+
 :::
 
-make 7 own page but link it
+
+change edit to copy on gslides!!
+make 7 own page but link it, and digest, and primer
 TODO different assembly enzymes
