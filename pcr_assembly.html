@@ -532,17 +532,19 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#goal-create-the-dsdna-that-will-be-the-template-to-create-your-rna-of-interest">
-   Goal: Create the dsDNA that will be the template to create your RNA of interest.
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   PCR assembly
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#introduction">
+     Introduction:
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction:
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#method">
    Method
   </a>
@@ -566,17 +568,19 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#goal-create-the-dsdna-that-will-be-the-template-to-create-your-rna-of-interest">
-   Goal: Create the dsDNA that will be the template to create your RNA of interest.
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   PCR assembly
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#introduction">
+     Introduction:
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction:
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#method">
    Method
   </a>
@@ -591,25 +595,19 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="pcr-assembly">
+  <section id="pcr-assembly">
 <h1>PCR assembly<a class="headerlink" href="#pcr-assembly" title="Permalink to this headline">#</a></h1>
-<section id="goal-create-the-dsdna-that-will-be-the-template-to-create-your-rna-of-interest">
-<h2>Goal: Create the dsDNA that will be the template to create your RNA of interest.<a class="headerlink" href="#goal-create-the-dsdna-that-will-be-the-template-to-create-your-rna-of-interest" title="Permalink to this headline">#</a></h2>
-<div class="toggle admonition">
-<p class="admonition-title">hiu</p>
-<p><em>TETST</em></p>
+<p>__Goal: Create the dsDNA that will be the template to create your RNA of interest. __</p>
+<section id="introduction">
+<h2>Introduction:<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<p>We need to go from the cheap short single-stranded DNA (ssDNA) oligos we ordered to the dsDNA which will transcribe to create our RNA of interest. To do this we conduct an <strong>PCR assembly reaction</strong>. In short, our oligos overlap with each other so they can anneal to each other. This creates multiple primed sites for PCR reactions. The complete double-standed DNA (dsDNA) will be completed in the extension steps. Using a construct designed by primerize this normally succeeds in making the dsDNA we want. Check the assembly with a gel confirming the expected length dsDNA is present and checking for side-products.  Finally, we need to quantify how much dsDNA we have in order to calculate the amount to use for the transcription step.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Once you have this complete dsDNA construct, you can amplify it using traditional PCR and the first forward primer and last reverse primer.</p>
 </div>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>If the assembly fails, first try another polymerase.</p>
-</div>
-</section>
-<section id="introduction">
-<h2>Introduction:<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
-<p>We need to go from the cheap short ssDNA oligos we ordered to the dsDNA which will transcribe to create our RNA of interest. To do this we conduct an PCR assembly reaction. In short, our oligos overlap with each other so they can anneal to each other. This creates multiple primed sites for PCR reactions. The complete dsDNA will be completed in the extension steps. Using a construct designed by primerize this normally succeeds in making the dsDNA we want. Check the assembly with a gel confirming the expected length dsDNA is present and checking for side-products. If there are significant side-products you may want to gel-purify the correct sized products, however it may be ok to proceed if you will exclude these products in dPAGE purification of the RNA. Note, if you have a epPCR primer site at the end of your construct you will want to remove this before transcribing the RNA for cryo-EM, this requires a digest, another column purification, and checking on the gel to see the size has reduced by the expected amount. Finally, we need to quantify how much dsDNA we have in order to calculate the amount to use for the transcription step.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Once you have this complete dsDNA construct, you can amplify it using traditional PCR and the first forward primer and last reverse primer.</p>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -640,8 +638,9 @@ title="Print to PDF"
 </ul>
 </div>
 </details></section>
+</section>
 <section id="method">
-<h2>Method<a class="headerlink" href="#method" title="Permalink to this headline">#</a></h2>
+<h1>Method<a class="headerlink" href="#method" title="Permalink to this headline">#</a></h1>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <svg version="4.0.0.63c5cb3" width="1.0em" height="1.0em" class="sd-material-icon sd-material-icon-format_list_numbered" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M2 17h2v.5H3v1h1v.5H2v1h3v-4H2v1zm1-9h1V4H2v1h1v3zm-1 3h1.8L2 13.1v.9h3v-1H3.2L5 10.9V10H2v1zm5-6v2h14V5H7zm0 14h14v-2H7v2zm0-6h14v-2H7v2z"></path></svg> 1. Primer MasterMix<div class="sd-summary-down docutils">
@@ -729,35 +728,40 @@ Vortex and spin down.</p></li>
 <ol class="simple">
 <li><p class="sd-card-text">Once bands are sufficiently discernable, stop the run, take the gel from the buffer and image it on a UV-transilluminator using the UV (SYBR) setting.</p></li>
 </ol>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<svg version="4.0.0.63c5cb3" width="1.0em" height="1.0em" class="sd-material-icon sd-material-icon-format_list_numbered" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M2 17h2v.5H3v1h1v.5H2v1h3v-4H2v1zm1-9h1V4H2v1h1v3zm-1 3h1.8L2 13.1v.9h3v-1H3.2L5 10.9V10H2v1zm5-6v2h14V5H7zm0 14h14v-2H7v2zm0-6h14v-2H7v2z"></path></svg>  5. dsDNA column purification<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p class="sd-card-text">If DNA gel reveals multiple bands, excise the band of interest and use the Qiagen QiaQuick Gel Extraction Kit to gel-purify the 	band before IVT.</p>
+<p class="sd-card-text">If there are significant side-products you may want to gel-purify the correct sized products, however it may be ok to proceed if you will exclude these products in dPAGE purification of the RNA.
+If DNA gel reveals multiple bands, excise the band of interest and use the Qiagen QiaQuick Gel Extraction Kit to gel-purify the band before IVT.</p>
 </div>
-<p class="sd-card-text">If you have multiple tubes of the same sample you can mix these all together first. If you may have more than 10µg of DNA, split the sample into multiple columns.</p>
-<p class="sd-card-text"><em>Bind DNA to the membrane:</em></p>
-<ol class="simple">
-<li><p class="sd-card-text">Place QIAquick spin column in 2mL collection tube.</p></li>
-<li><p class="sd-card-text">Add 5:1 Buffer PB:PCR sample and vortex. (eg 1000µL PB to 200µL product). (should be yellow).</p></li>
-<li><p class="sd-card-text">Add 700µL at a time to the column. Spin at 13,000 for 1min. Discard flow-through. Repeat until all is in the column.</p></li>
-</ol>
-<p class="sd-card-text"><em>Wash DNA:</em>
-4. Add 700µL Buffer PE. Spin at 13,000 for 1min. Discard flow-through. Dap on a chem wipe to remove as much ethanol as possible.</p>
-<p class="sd-card-text"><em>Remove residual ethanol:</em>
+</div>
+</details><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+
+
+::::{dropdown} {material-regular}`format_list_numbered`  5. dsDNA column purification
+
+
+
+If you have multiple tubes of the same sample you can mix these all together first. If you may have more than 10µg of DNA, split the sample into multiple columns.
+
+_Bind DNA to the membrane:_
+1. Place QIAquick spin column in 2mL collection tube.
+2. Add 5:1 Buffer PB:PCR sample and vortex. (eg 1000µL PB to 200µL product). (should be yellow).
+3. Add 700µL at a time to the column. Spin at 13,000 for 1min. Discard flow-through. Repeat until all is in the column.
+
+_Wash DNA:_
+4. Add 700µL Buffer PE. Spin at 13,000 for 1min. Discard flow-through. Dap on a chem wipe to remove as much ethanol as possible.
+
+_Remove residual ethanol:_
 5. Spin at 13,000 for 2min.
-6. Move column to a well-labeled 1.5mL tube. Dry 15min with an open column.</p>
-<p class="sd-card-text"><em>Elute DNA:</em>
-7. Add 30µL ddH2O directly to the membrane. Wait 10min. Spin at 10,000 for 1min. Discard column not flowthrough.
-8. Save DNA in -20oC. [dsDNA]</p>
+6. Move column to a well-labeled 1.5mL tube. Dry 15min with an open column.
+
+_Elute DNA:_
+7. Add 30µL ddH2O directly to the membrane. Wait 10min. Spin at 10,000 for 1min. Discard column not flowthrough. 
+8. Save DNA in -20oC. [dsDNA]
+
+</pre></div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <svg version="4.0.0.63c5cb3" width="1.0em" height="1.0em" class="sd-material-icon sd-material-icon-format_list_numbered" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M2 17h2v.5H3v1h1v.5H2v1h3v-4H2v1zm1-9h1V4H2v1h1v3zm-1 3h1.8L2 13.1v.9h3v-1H3.2L5 10.9V10H2v1zm5-6v2h14V5H7zm0 14h14v-2H7v2zm0-6h14v-2H7v2z"></path></svg>  6. dsDNA Quantification<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -774,7 +778,11 @@ Vortex and spin down.</p></li>
 <li><p class="sd-card-text">Calculate concentration: DNA (μM) = [A260 x 50,000] / [660 x length (bp)]</p></li>
 </ol>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</details><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note, if you have a epPCR primer site at the end of your construct you will want to remove this before transcribing the RNA for cryo-EM, this requires a digest, another column purification, and checking on the gel to see the size has reduced by the expected amount.</p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <svg version="4.0.0.63c5cb3" width="1.0em" height="1.0em" class="sd-material-icon sd-material-icon-format_list_numbered" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M2 17h2v.5H3v1h1v.5H2v1h3v-4H2v1zm1-9h1V4H2v1h1v3zm-1 3h1.8L2 13.1v.9h3v-1H3.2L5 10.9V10H2v1zm5-6v2h14V5H7zm0 14h14v-2H7v2zm0-6h14v-2H7v2z"></path></svg> 7. DNA gel purification<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -800,9 +808,9 @@ Vortex and spin down.</p></li>
 <li><p class="sd-card-text">Save DNA in -20C <strong>[dsDNA]</strong></p></li>
 </ol>
 </div>
-</details><p>make 7 own page but link it
+</details><p>change edit to copy on gslides!!
+make 7 own page but link it, and digest, and primer
 TODO different assembly enzymes</p>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
