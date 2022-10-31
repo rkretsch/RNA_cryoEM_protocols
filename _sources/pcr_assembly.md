@@ -68,18 +68,14 @@ If the assembly fails, first try another polymerase.
 2. Each standard reaction is 50µL, recommend 4 standard reactions per assembly. Label PCR tubes for each assembly. *Recognize the capacity of your thermocycler, if it is 100µL and you want 4 standard reactions per assembly, each assembly will need to be done in 2 PCR tubes (100µL each, 200µL total).*
 
 3. For each assembly add 16µL of [**primer MM**] per standard reaction (eg 64µL for 4 standard reactions) directly to the PCR tubes.
-
 4. Make a Phusion MM for 1.1x the number of reactions you need (number of assemblies x number of standard reactions per assembly). Per reaction you need:
    	22µL ddH2O
    	10µL HF-buffer
    	1µL dNTPs (10mM)
    	1µL Phusion polymerase **add last minute**
    Vortex and spin down.
-
 5. Add 34µL of Phusion MM per standard reaction to each of your PCR tubes.
-
 6. Vortex and spin down. Immediately place in thermocycler
-
     :::
 
 :::{dropdown} {material-regular}`format_list_numbered` 3. PCR cycles
@@ -91,7 +87,6 @@ If the assembly fails, first try another polymerase.
        72oC 30sec] *(may need to extend if longer construct, 15-30 per kb)*
    72oC 10min
    12oC inf
-   
    :::
 
 :::{dropdown} {material-regular}`format_list_numbered`  4a. Agarose gel
