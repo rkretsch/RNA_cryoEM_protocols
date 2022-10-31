@@ -6,15 +6,19 @@
 
 2. Log into the PAN website 
 
-3. 1. RNA-DNA QC → Place Order
-   2. Sample Type: cDNA
-   3. Assay Type: HS DNA
-   4. Sample Source: in vitro
-   5. Type in sample name and concentration
+   ​	a.	RNA-DNA QC → Place Order
 
-4. Sample name will be generated from PAN website
+   ​	b.	Sample Type: cDNA
 
-5. 1. Label the tubes using the given sample name and your initials
+   ​	c.	Assay Type: HS DNA
 
-6. Print out order form and bring samples to drop off in the PAN refrigerator:::
+   ​	d.	Sample Source: in vitro
+
+   ​	e.	Type in sample name and concentration
+
+3. Sample name will be generated from PAN website
+
+   ​	a.	Label the tubes using the given sample name and your initials
+
+4. Print out order form and bring samples to drop off in the PAN refrigerator:::
 
