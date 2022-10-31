@@ -8,6 +8,7 @@ parts:
     chapters: 
     - file: pcr_assembly
     - file: IVT
+    - file: rna_analysis
   - caption: Grid preperation
     chapters:
     - file: Folding

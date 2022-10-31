@@ -5,10 +5,10 @@
 __Goal: Create the dsDNA that will be the template to create your RNA of interest. __
 
 
+
 ###### Introduction: 
 
 We need to go from the cheap short single-stranded DNA (ssDNA) oligos we ordered to the dsDNA which will transcribe to create our RNA of interest. To do this we conduct an __PCR assembly reaction__. In short, our oligos overlap with each other so they can anneal to each other. This creates multiple primed sites for PCR reactions. The complete double-standed DNA (dsDNA) will be completed in the extension steps. Using a construct designed by primerize this normally succeeds in making the dsDNA we want. Check the assembly with a gel confirming the expected length dsDNA is present and checking for side-products.  Finally, we need to quantify how much dsDNA we have in order to calculate the amount to use for the transcription step.
-
 
 :::{note}
 Once you have this complete dsDNA construct, you can amplify it using traditional PCR and the first forward primer and last reverse primer.
