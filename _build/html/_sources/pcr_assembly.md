@@ -89,7 +89,7 @@ If the assembly fails, first try another polymerase.
    12oC inf
    :::
 
-:::{dropdown} {material-regular}`format_list_numbered`  4. Agarose gel
+:::{dropdown} {material-regular}`format_list_numbered`  4a. Agarose gel
 _Make agarose gel:_
 
 1. Need 150mL of 1xTBE buffer. Make from 10xTBE and milliQ water.
@@ -123,6 +123,23 @@ If there are significant side-products you may want to gel-purify the correct si
 If DNA gel reveals multiple bands, excise the band of interest and use the Qiagen QiaQuick Gel Extraction Kit to gel-purify the band before IVT.
 :::
 
+:::{dropdown} {material-regular}`format_list_numbered`  4b. E-gel
+
+1. Prep samples by mixing 15µL E-gel loading buffer with 5µL sample (use 96 well plate)
+
+2. 1. Mix 5µL E-gel DNA ladder with 15µL loading buffer
+
+3. Take E-gel cassette out of package and remove comb before placing into E-gel machine
+
+4. Load water in the outer lanes if there are extra lanes (all lanes must be filled)
+
+5. Load prepared DNA ladder and samples
+
+6. Close the lid and run gel on Program 7 for 10 min (for 2% gels)
+
+:::{warning}
+If there are significant side-products you may want to gel-purify the correct sized products, however it may be ok to proceed if you will exclude these products in dPAGE purification of the RNA. 
+If DNA gel reveals multiple bands, excise the band of interest and use the Qiagen QiaQuick Gel Extraction Kit to gel-purify the band before IVT.
 :::
 
 
