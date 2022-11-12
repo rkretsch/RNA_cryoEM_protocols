@@ -20,5 +20,7 @@
 
    ​	a.	Label the tubes using the given sample name and your initials
 
-4. Print out order form and bring samples to drop off in the PAN refrigerator:::
+4. Print out order form and bring samples to drop off in the PAN refrigerator
+
+   :::
 
