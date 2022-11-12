@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>in vitro transcription (IVT) &#8212; RNA cryoEM protocols</title>
+    <title>in vitro Transcription (IVT) &#8212; RNA cryoEM protocols</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Folding" href="Folding.html" />
+    <link rel="next" title="RNA anlysis" href="rna_analysis.html" />
     <link rel="prev" title="PCR assembly" href="pcr_assembly.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -131,7 +131,12 @@ const thebe_selector_output = ".output, .cell_output"
    <em>
     in vitro
    </em>
-   transcription (IVT)
+   Transcription (IVT)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="rna_analysis.html">
+   RNA anlysis
   </a>
  </li>
 </ul>
@@ -533,9 +538,36 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#goal-to-create-the-rna-of-interest-from-the-dna-template">
-   Goal: to create the RNA of interest from the DNA template
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#materials">
+   Materials:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#method">
+   Method
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-ivt-with-transcriptaid">
+     1a. IVT with TranscriptAid
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#b-rna-column-purification">
+     1b. RNA Column Purification
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#c-rna-quantification">
+     1c. RNA Quantification
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -546,7 +578,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>in vitro transcription (IVT)</h1>
+                <h1>in vitro Transcription (IVT)</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -557,9 +589,36 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#goal-to-create-the-rna-of-interest-from-the-dna-template">
-   Goal: to create the RNA of interest from the DNA template
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#materials">
+   Materials:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#method">
+   Method
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-ivt-with-transcriptaid">
+     1a. IVT with TranscriptAid
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#b-rna-column-purification">
+     1b. RNA Column Purification
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#c-rna-quantification">
+     1c. RNA Quantification
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -572,9 +631,78 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="in-vitro-transcription-ivt">
-<h1><em>in vitro</em> transcription (IVT)<a class="headerlink" href="#in-vitro-transcription-ivt" title="Permalink to this headline">#</a></h1>
-<section id="goal-to-create-the-rna-of-interest-from-the-dna-template">
-<h2>Goal: to create the RNA of interest from the DNA template<a class="headerlink" href="#goal-to-create-the-rna-of-interest-from-the-dna-template" title="Permalink to this headline">#</a></h2>
+<h1><em>in vitro</em> Transcription (IVT)<a class="headerlink" href="#in-vitro-transcription-ivt" title="Permalink to this headline">#</a></h1>
+<p>Goal: Create the RNA of interest from the DNA template.</p>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<p>T7 polymerase catalyzes the formation of RNA from DNA in the 5’–&gt;3’ direction. It will read the 5’–&gt;3’ strand of our DNA template and use NTPs to create the complementary RNA strand. T7 is extremely specific for its promoter which we inserted at the start of our construct, so most of our product should be the length of our dsDNA we put in minus the promoter region which T7 does not transcribe. We then clean up our IVT reaction using Zymo RCC columns and quantify how much RNA we have at this stage.</p>
+</section>
+<section id="materials">
+<h2>Materials:<a class="headerlink" href="#materials" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>[dsDNA]</p></li>
+<li><p>Heat blocks</p></li>
+<li><p>TranscriptAid kit</p></li>
+<li><p>Zymo RNA Clean &amp; Concentrator 25</p></li>
+<li><p>ddH2O</p></li>
+<li><p>NanoDrop</p></li>
+<li><p>100% EtOH</p></li>
+</ul>
+</section>
+<section id="method">
+<h2>Method<a class="headerlink" href="#method" title="Permalink to this headline">#</a></h2>
+<section id="a-ivt-with-transcriptaid">
+<h3>1a. IVT with TranscriptAid<a class="headerlink" href="#a-ivt-with-transcriptaid" title="Permalink to this headline">#</a></h3>
+<div class="toggle docutils container">
+<ol class="simple">
+<li><p>You want to aim for 2000ng/reaction, and for cryo-EM often want 3 reactions total. For each reaction you have:</p>
+<ul class="simple">
+<li><p>8µL NTPs (25mM)</p></li>
+<li><p>4µL 5x buffer</p></li>
+<li><p>2000ng DNA or less</p></li>
+<li><p>2µL T7 mix *add last</p></li>
+<li><p>ddH2O to bring to 20µL</p></li>
+</ul>
+</li>
+<li><p>Incubate at 37°C for minimum 4 hours, especially if you have a mutant promoter do this overnight, if PAGE-purifying it is safe to run all overnight (off-products from running too long are generally a different length). Note down time incubated for.</p></li>
+<li><p>Add 2µL DNase I per reaction. Incubate 15min at 37°C to digest any left over DNA.</p></li>
+</ol>
+</div>
+</section>
+<section id="b-rna-column-purification">
+<h3>1b. RNA Column Purification<a class="headerlink" href="#b-rna-column-purification" title="Permalink to this headline">#</a></h3>
+<div class="toggle docutils container">
+<ol class="simple">
+<li><p>Move to IVT solution to 1.5mL tube. Add 2xIVT volume binding buffer and 3xIVT volume 100% EtOH to sample and mix well.</p>
+<ul class="simple">
+<li><p>Note - for RNAs &lt; 200 nt, add 4.5xIVT volume of 100% ethanol (e.g. for an IVT with a volume of 66 uL, add 132 uL binding buffer and 297 uL 100% EtOH).</p></li>
+</ul>
+</li>
+<li><p>Add into the zymo RCC column, 700µL at a time. Wait 5min. Spin at 13,000g for 1min. Discard flow-through. Repeat until all the solution is added to the column.</p></li>
+<li><p>Add 400µL of Prep-Buffer to the column. Spin at 13,000g for 1min. Discard flow-through.</p></li>
+<li><p>Add 700µL of Wash Buffer to the column. Spin at 13,000g for 30sec. Discard flow-through.</p></li>
+<li><p>Add 400µL of Wash Buffer to column. Spin at 13,000g for 30sec. Discard flow-through.</p></li>
+<li><p>Spin at 13,000g for 2min.</p></li>
+<li><p><em>Optional:</em> Move column to well labeled 1.5mL tube. Dry 15min with cap open.</p></li>
+<li><p>Add 30µL of ddH2O to elute. Wait 5 min. Spin at 13,000g for 30sec.</p></li>
+<li><p>Immediately in -80°C!</p></li>
+</ol>
+</div>
+</section>
+<section id="c-rna-quantification">
+<h3>1c. RNA Quantification<a class="headerlink" href="#c-rna-quantification" title="Permalink to this headline">#</a></h3>
+<div class="toggle docutils container">
+<ol class="simple">
+<li><p>Dilute RNA [5x and/or 25x dilution recommended: 2µL ddH2O and 0.5µL sample in PCR tube] If you bring your own pipette to the non-RNAse free nanodrop, wipe it off with RNAse zap before using again.</p></li>
+<li><p>Wipe down the NanoDrop. Calibrate with 1µL ddH20. Set to RNA.</p></li>
+<li><p>Blank and zero with 1µL ddH2O.</p></li>
+<li><p>Load 1µL of sample, take measurement.</p></li>
+<li><p>Check for contaminants. Expect A260/A280~2.1. Do not want a 230 shoulder.  Generally, if A260 above 70 needs to dilute further.</p></li>
+<li><p>Write down: A260, A280, and Reported ng/µL.</p></li>
+<li><p>Calculate concentration: RNA (μM) = [A260 x 40,000] / [330 x length (bp)]</p></li>
+</ol>
+</div>
+</section>
 </section>
 </section>
 
@@ -612,10 +740,10 @@ title="Print to PDF"
             <p class="prev-next-title">PCR assembly</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="Folding.html" title="next page">
+    <a class='right-next' id="next-link" href="rna_analysis.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Folding</p>
+        <p class="prev-next-title">RNA anlysis</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
