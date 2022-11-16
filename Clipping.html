@@ -131,7 +131,12 @@ const thebe_selector_output = ".output, .cell_output"
    <em>
     in vitro
    </em>
-   transcription (IVT)
+   Transcription (IVT)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="rna_analysis.html">
+   RNA anlysis
   </a>
  </li>
 </ul>
@@ -196,6 +201,11 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="Live_processing.html">
+     Live Processing
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="data_processing/cryosparc_live.html">
      cryosparc_live
     </a>
@@ -217,6 +227,11 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Preprocessing.html">
+     Pre-processing
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="data_processing/motion_correction.html">
      motion_correction
@@ -244,6 +259,16 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="particle_picking.html">
+     Particle Picking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2D_classification.html">
+     2D Classification
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="data_processing/blob_picking.html">
      blob_picking
@@ -537,6 +562,26 @@ title="Print to PDF"
    Goal: to enable grids to be used with a Thermo Fisher autoloader.
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#protocols-resources">
+   Protocols/Resources
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#materials">
+   Materials
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#method">
+   Method
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -561,6 +606,26 @@ title="Print to PDF"
    Goal: to enable grids to be used with a Thermo Fisher autoloader.
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#protocols-resources">
+   Protocols/Resources
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#materials">
+   Materials
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#method">
+   Method
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -575,7 +640,76 @@ title="Print to PDF"
 <h1>Clipping<a class="headerlink" href="#clipping" title="Permalink to this headline">#</a></h1>
 <section id="goal-to-enable-grids-to-be-used-with-a-thermo-fisher-autoloader">
 <h2>Goal: to enable grids to be used with a Thermo Fisher autoloader.<a class="headerlink" href="#goal-to-enable-grids-to-be-used-with-a-thermo-fisher-autoloader" title="Permalink to this headline">#</a></h2>
-<p>SOP: <a class="reference external" href="https://www.cryoemcenters.org/merit-badge/tfs-autogrid-clipping/grid-clipping-sop/">https://www.cryoemcenters.org/merit-badge/tfs-autogrid-clipping/grid-clipping-sop/</a></p>
+</section>
+<section id="introduction">
+<h2>Introduction:<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<p>In order for the grids to be loaded into the microscope, they must be clipped so that they can be more easily transferred and loaded/unloaded from the stage by the autoloader system within the microscope, which is done by a retractable robotic arm. This process must be completed under liquid nitrogen and done as quickly and carefully as possible, since exposing the grids to the air allows ice contaminants to form on them.</p>
+</section>
+<section id="protocols-resources">
+<h2>Protocols/Resources<a class="headerlink" href="#protocols-resources" title="Permalink to this headline">#</a></h2>
+<p><a class="reference external" href="https://www.cryoemcenters.org/merit-badge/tfs-autogrid-clipping/grid-clipping-sop/">Base knowledge/SOP</a></p>
+<p><a class="reference external" href="https://drive.google.com/file/d/1dpESuZTEyutyKTKS-Qug6i3vzwtKytiZ/view">Video tutorial</a></p>
+</section>
+<section id="materials">
+<h2>Materials<a class="headerlink" href="#materials" title="Permalink to this headline">#</a></h2>
+<ul>
+<li><p>C-clips (one per grid)</p></li>
+<li><p>Autoloader rings (one per grid)</p></li>
+<li><p>C-clip clipping tool (one per grid)</p></li>
+<li><p>Autogrid tweezers</p></li>
+<li><p>Fine-tip tweezers</p></li>
+<li><p>Clipping station with clipping pedestal</p></li>
+<li><p>Autogrid storage box</p></li>
+<li><p>Pen tool for autogrid box lid</p></li>
+<li><p>Frozen grids</p></li>
+<li><p>Sample transfer dewar</p></li>
+<li><p>Dewar for liquid nitrogen</p></li>
+<li><p>Screwdriver tool</p></li>
+<li><p>Heat block</p></li>
+<li><p>Additional tools/tweezers for handling boxes/grids</p>
+<p><img alt="clipping_tools" src="_images/clipping_tools.png" />
+<strong>Figure 1. Tools for clipping grids.</strong></p>
+</li>
+</ul>
+</section>
+<section id="method">
+<h2>Method<a class="headerlink" href="#method" title="Permalink to this headline">#</a></h2>
+<ol>
+<li><p>First, using a pair of fine-tip tweezers, carefully pick up a c-clip from its center and shove it into the hole at the top of the clipping tool, as shown below. C-clip should be completely below the lip of the hole and at an angle, not perpendicular to the opening.</p>
+<p><img alt="c_ring_orientation" src="_images/c_ring_orientation.png" />
+<strong>Figure 2: Correct orientation of c-ring in clipping tool.</strong></p>
+</li>
+<li><p>Place the hole of the clipping tool flat against the tabletop and gently press it down twice. Check the tip of the hole to ensure that the c-clip has positioned itself parallel to the edge of the hole.</p>
+<p><img alt="c_ring_in_tool" src="_images/c_ring_in_tool.png" />
+<strong>Figure 3: Correct placement of c-ring inside clipping tool.</strong></p>
+</li>
+<li><p>Place the autogrid storage box inside the clipping station and use the pen tool to remove the lid and place it to the side within the station.</p></li>
+<li><p>Now you will cool down the clipping station. Get some liquid nitrogen in a dewar. Pour it into the clipping station and cover with a lid between pours. Continue repeating this process until the station is cooled down (you will hear a hissing sound and the heavy boiling will stop).</p></li>
+<li><p>Transfer the autogrid rings using a pair of tweezers to their slot on the top of the brass pedestal in the clipping station.</p></li>
+<li><p>Quickly transfer the gridbox containing your frozen grids to the clipping station and use the screwdriver to loosen the lid, then move it so that the opening is over a slot containing a grid.</p></li>
+<li><p>Remove the lid from the clipping station and place your tools inside to cool down (clipping tools, autogrid tweezers, and fine-tip tweezers).</p>
+<p><img alt="clipping_station_with_tools" src="_images/clipping_station_with_tools.png" />
+<strong>Figure 3: Clipping station including tools.</strong></p>
+</li>
+<li><p>Using the tweezers, transfer an autogrid ring, flat side down, into the loading pedestal open position (shown below).</p>
+<p><img alt="autogrid_on_pedestal" src="_images/autogrid_on_pedestal.png" />
+<strong>Figure 4: Autogrid ring on loading pedestal position.</strong></p>
+</li>
+<li><p>Carefully remove a grid from the gridbox and position it flat on the center of the autogrid ring, copper side facing up.</p>
+<ul class="simple">
+<li><p>Tip: be cautious throughout the following process to keep all tools and grids inside the liquid nitrogen vapor, topping up liquid nitrogen levels in the dewar if necessary. Additionally, if a tool is taken out of the vapor and frost begins to form on it, make sure to store it in a heat block and take another tool instead to prevent contamination. Fine tweezers can be placed on the counter and SHOULD NOT be stored in the heat block as this can bend their tips.</p></li>
+</ul>
+</li>
+<li><p>Using the autogrid tweezers, insert them into the slot in the center of the loading pedestal and rotate it counterclockwise so that the grid and autoloader ring are centered under the hole to the left.</p></li>
+<li><p>Take a clipping tool and insert it into the hole over the grid. Making sure it is flat, press down firmly with the clipping tool, then remove it and place it to the side.</p></li>
+<li><p>Use the autogrid tweezers to rotate the pedestal clockwise back to its original position, then transfer the clipped grid to the autogrid box with the autogrid tweezers, checking to ensure that the grid was clipped properly before storing it. Have the copper side of the grid face “up” towards the numeral in the grid box.</p>
+<p><img alt="clipped_grid" src="_images/clipped_grid.png" />
+<strong>Figure 5: Properly clipped grid.</strong></p>
+</li>
+<li><p>Repeat steps 8-12 for all your grids.</p></li>
+<li><p>Fill a sample transfer dewar with liquid nitrogen and allow it to cool. Use the pen tool to secure the plastic lid on the autogrid box, then quickly transfer it to the sample transfer dewar. Now the grids can be stored in a storage dewar or loaded into a cassette for screening.</p></li>
+<li><p>Now that you are done clipping, be sure to clean up. Return buttons and the fine tweezers to their proper storage location where they will defrost. Place the rest of the tools onto the heat block so they can defrost. Place the clipping station in the proper drying area. Place the sample transfer station in the proper drying location.</p></li>
+</ol>
 </section>
 </section>
 
