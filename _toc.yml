@@ -23,15 +23,19 @@ parts:
     chapters:
     - file: data_processing/Live_processing
       sections:
+      - file: Live_processing
       - file: data_processing/cryosparc_live
       - file: data_processing/S2C2_pipeline
     - file: data_processing/Pre_processing
       sections:
+      - file: Preprocessing
       - file: data_processing/motion_correction
       - file: data_processing/ctf_estimation
       - file: data_processing/micrograph_curation
     - file: data_processing/Particle_picking
       sections:
+      - file: particle_picking.md
+      - file: 2D_classification
       - file: data_processing/blob_picking
       - file: data_processing/template_picking
       - file: data_processing/deep_picking

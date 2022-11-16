@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>2D_classification &#8212; RNA cryoEM protocols</title>
+    <title>2D Classification &#8212; RNA cryoEM protocols</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -43,6 +43,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -53,8 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="paticle_picking_strategies" href="paticle_picking_strategies.html" />
-    <link rel="prev" title="template_picking" href="template_picking.html" />
+    <link rel="next" title="blob_picking" href="data_processing/blob_picking.html" />
+    <link rel="prev" title="Particle Picking" href="particle_picking.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -130,7 +131,12 @@ const thebe_selector_output = ".output, .cell_output"
    <em>
     in vitro
    </em>
-   transcription (IVT)
+   Transcription (IVT)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="rna_analysis.html">
+   RNA anlysis
   </a>
  </li>
 </ul>
@@ -185,7 +191,7 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="Live_processing.html">
+  <a class="reference internal" href="data_processing/Live_processing.html">
    Live Processing
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
@@ -195,19 +201,24 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="cryosparc_live.html">
+    <a class="reference internal" href="Live_processing.html">
+     Live Processing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="data_processing/cryosparc_live.html">
      cryosparc_live
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="S2C2_pipeline.html">
+    <a class="reference internal" href="data_processing/S2C2_pipeline.html">
      S2C2_pipeline
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="Pre_processing.html">
+  <a class="reference internal" href="data_processing/Pre_processing.html">
    Pre-processing
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
@@ -217,24 +228,29 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="motion_correction.html">
+    <a class="reference internal" href="Preprocessing.html">
+     Pre-processing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="data_processing/motion_correction.html">
      motion_correction
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="ctf_estimation.html">
+    <a class="reference internal" href="data_processing/ctf_estimation.html">
      ctf_estimation
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="micrograph_curation.html">
+    <a class="reference internal" href="data_processing/micrograph_curation.html">
      micrograph_curation
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="Particle_picking.html">
+  <a class="reference internal" href="data_processing/Particle_picking.html">
    Particle picking
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
@@ -244,29 +260,44 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="blob_picking.html">
-     blob_picking
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="template_picking.html">
-     template_picking
+    <a class="reference internal" href="particle_picking.html">
+     Particle Picking
     </a>
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
+     2D Classification
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="data_processing/blob_picking.html">
+     blob_picking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="data_processing/template_picking.html">
+     template_picking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="data_processing/deep_picking.html">
+     deep picking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="data_processing/2D_classification.html">
      2D_classification
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="paticle_picking_strategies.html">
+    <a class="reference internal" href="data_processing/paticle_picking_strategies.html">
      paticle_picking_strategies
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="3D_reconstruction.html">
+  <a class="reference internal" href="data_processing/3D_reconstruction.html">
    3D reconstruction
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
@@ -276,35 +307,35 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="ab_initio.html">
+    <a class="reference internal" href="data_processing/ab_initio.html">
      ab_initio
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="3D_classification.html">
+    <a class="reference internal" href="data_processing/3D_classification.html">
      3D_classification
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="3D_refine.html">
+    <a class="reference internal" href="data_processing/3D_refine.html">
      3D_refine
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="sharpening.html">
+    <a class="reference internal" href="data_processing/sharpening.html">
      sharpening.md
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="3D_reconstruction_strategies.html">
+    <a class="reference internal" href="data_processing/3D_reconstruction_strategies.html">
      3D_reconstruction_strategies
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="Using_SDF.html">
-   Using SDF
+  <a class="reference internal" href="data_processing/Software.html">
+   Software
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
@@ -313,37 +344,37 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="acquire_sdf.html">
+    <a class="reference internal" href="data_processing/acquire_sdf.html">
      acquire_sdf
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="relion.html">
+    <a class="reference internal" href="data_processing/relion.html">
      relion
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="cryosparc.html">
+    <a class="reference internal" href="data_processing/cryosparc.html">
      cryosparc
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="transfer_relion_cryosparc.html">
+    <a class="reference internal" href="data_processing/transfer_relion_cryosparc.html">
      transfer_relion_cryosparc
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="cryoDRGN.html">
+    <a class="reference internal" href="data_processing/cryoDRGN.html">
      cryoDRGN
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="topaz.html">
+    <a class="reference internal" href="data_processing/topaz.html">
      topaz
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="cryolo.html">
+    <a class="reference internal" href="data_processing/cryolo.html">
      cryolo
     </a>
    </li>
@@ -422,7 +453,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://rkretsch.github.io/RNA_cryoEM_protocols"
+        <a href="https://github.com/rkretsch/RNA_cryoEM_protocols"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -439,7 +470,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://rkretsch.github.io/RNA_cryoEM_protocols/issues/new?title=Issue%20on%20page%20%2F2D_classification.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/rkretsch/RNA_cryoEM_protocols/issues/new?title=Issue%20on%20page%20%2F2D_classification.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -504,23 +535,104 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goal-to-classify-particles-into-groups-representing-various-two-dimensional-views-of-the-entire-molecule">
+   Goal: to classify particles into groups representing various two dimensional views of the entire molecule.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#methods">
+   Methods
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     2D Classification
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#select-2d-classes">
+     Select 2D Classes
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>2D_classification</h1>
+                <h1>2D Classification</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goal-to-classify-particles-into-groups-representing-various-two-dimensional-views-of-the-entire-molecule">
+   Goal: to classify particles into groups representing various two dimensional views of the entire molecule.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#methods">
+   Methods
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     2D Classification
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#select-2d-classes">
+     Select 2D Classes
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -529,7 +641,66 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="d-classification">
-<h1>2D_classification<a class="headerlink" href="#d-classification" title="Permalink to this headline">#</a></h1>
+<h1>2D Classification<a class="headerlink" href="#d-classification" title="Permalink to this headline">#</a></h1>
+<section id="goal-to-classify-particles-into-groups-representing-various-two-dimensional-views-of-the-entire-molecule">
+<h2>Goal: to classify particles into groups representing various two dimensional views of the entire molecule.<a class="headerlink" href="#goal-to-classify-particles-into-groups-representing-various-two-dimensional-views-of-the-entire-molecule" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<p>Once you have a stack of particles representing your molecule, you can classify each of those views into a 2D orientation of that molecule. Since there are thousands of particles suspended in the ice in different orientations, each particle must be classified with other particles that resemble it, so we have groups of particles in separate orientations.</p>
+</section>
+<section id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">#</a></h2>
+<section id="id1">
+<h3>2D Classification<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<p>Create a “2D Class” job. The inputs for this job are the particles which have been extracted from a micrograph using the “Extract from Micrographs” job.</p>
+<p>The following parameters are helpful to modify for this job:</p>
+<ul class="simple">
+<li><p>Number of 2D classes</p>
+<ul>
+<li><p>The default value is 50, but can try a range from 40, 80, 100, etc.</p></li>
+</ul>
+</li>
+<li><p>Maximum resolution (A)</p>
+<ul>
+<li><p>Default is 6, but can increase resolution at later stages</p></li>
+<li><p>Recommended to keep it at 6 after initial blob picking</p></li>
+</ul>
+</li>
+<li><p>Initial classification uncertainty factor</p>
+<ul>
+<li><p>Controls the initial search for 2D references</p></li>
+<li><p>A lower number (e.g. 2-3) will give more junk classes (this is useful in the first few rounds of 2D class to help eliminate noise)</p></li>
+<li><p>A higher number (8-10) will result in a higher diversity of “better” or more refined classes (this is useful in the later steps of the process)</p></li>
+</ul>
+</li>
+<li><p>Circular mask diameter (A)</p>
+<ul>
+<li><p>Estimate how large of a window is necessary to view the whole particle in angstroms</p></li>
+</ul>
+</li>
+<li><p>Circular mask diameter outer (A)</p>
+<ul>
+<li><p>Can have a larger gradient from visible to opaque to see outer edges of the particle</p></li>
+</ul>
+</li>
+<li><p>Number of online-EM iterations</p>
+<ul>
+<li><p>Should increase this to at least 30-40 (helpful for smaller particles)</p></li>
+</ul>
+</li>
+<li><p>Batchsize per class</p>
+<ul>
+<li><p>Increase to at least 200-300 (better for smaller particles)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="select-2d-classes">
+<h3>Select 2D Classes<a class="headerlink" href="#select-2d-classes" title="Permalink to this headline">#</a></h3>
+<p>Finally, create the “Select 2D classes” job in order to interactively view the 2D classes created from the “2D Class” job.  Parameters used to consider whether or not to select a class include: the clarity/resolution of the class, the number of particles in the class, and if the full particle is visible. Additionally, try to select classes which represent all orientations. For RNA reconstruction, it is best to keep all particles that resemble RNA molecules at this stage. The goal is to strike a balance between keeping particle numbers high while removing “junk” or noise.</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -559,17 +730,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="template_picking.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="particle_picking.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">template_picking</p>
+            <p class="prev-next-title">Particle Picking</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="paticle_picking_strategies.html" title="next page">
+    <a class='right-next' id="next-link" href="data_processing/blob_picking.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">paticle_picking_strategies</p>
+        <p class="prev-next-title">blob_picking</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

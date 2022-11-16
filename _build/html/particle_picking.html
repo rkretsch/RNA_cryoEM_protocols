@@ -4,8 +4,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; RNA cryoEM protocols</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Particle Picking &#8212; RNA cryoEM protocols</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -51,8 +52,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="index" title="Index" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2D Classification" href="2D_classification.html" />
+    <link rel="prev" title="Particle picking" href="data_processing/Particle_picking.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -186,7 +189,7 @@ const thebe_selector_output = ".output, .cell_output"
   Data processing
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="data_processing/Live_processing.html">
    Live Processing
@@ -246,18 +249,18 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="data_processing/Particle_picking.html">
    Particle picking
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="particle_picking.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Particle Picking
     </a>
    </li>
@@ -467,7 +470,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/rkretsch/RNA_cryoEM_protocols/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/rkretsch/RNA_cryoEM_protocols/issues/new?title=Issue%20on%20page%20%2Fparticle_picking.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -487,22 +490,169 @@ title="Open an issue"
   </div>
 </div>
 
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/particle_picking.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goal-to-pick-a-stack-of-particles-from-a-set-of-micrographs-representing-the-molecule-of-interest">
+   Goal:  to pick a stack of particles from a set of micrographs representing the molecule of interest.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#methods">
+   Methods
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#blob-picking">
+     Blob Picking
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#template-picking">
+     Template Picking
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#inspect-picks">
+     Inspect Picks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#extract-from-micrographs">
+     Extract From Micrographs
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1></h1>
+                <h1>Particle Picking</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goal-to-pick-a-stack-of-particles-from-a-set-of-micrographs-representing-the-molecule-of-interest">
+   Goal:  to pick a stack of particles from a set of micrographs representing the molecule of interest.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#methods">
+   Methods
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#blob-picking">
+     Blob Picking
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#template-picking">
+     Template Picking
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#inspect-picks">
+     Inspect Picks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#extract-from-micrographs">
+     Extract From Micrographs
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -510,13 +660,122 @@ title="Open an issue"
                 
               <div>
                 
+  <section class="tex2jax_ignore mathjax_ignore" id="particle-picking">
+<h1>Particle Picking<a class="headerlink" href="#particle-picking" title="Permalink to this headline">#</a></h1>
+<section id="goal-to-pick-a-stack-of-particles-from-a-set-of-micrographs-representing-the-molecule-of-interest">
+<h2>Goal:  to pick a stack of particles from a set of micrographs representing the molecule of interest.<a class="headerlink" href="#goal-to-pick-a-stack-of-particles-from-a-set-of-micrographs-representing-the-molecule-of-interest" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<p>The next step of the reconstruction process is to pick out the particles in the micrographs which are representative of your desired species and compile a stack of particles which are much smaller images of the molecule itself. There are multiple ways to achieve this; the first is blob picking, which simply selects for a region of high signal with a specified radius and shape. The second is template picking, which requires you to have already completed a 2D classification job and selected a set of views of the molecule. The algorithm then looks for particles which match the views or templates you have given it. Another method is deep picking, which uses a neural network to select particles. Using this method requires having hand-picked or curated a set of several thousand particles in order to train the model. After using a picker, which finds the locations of particles, you can inspect those picks and choose desired parameters of the cross correlation of the signal with the parameters of the picker, as well as the thresholds of the power of the signal. Finally, you must extract a stack of smaller views of the particles themselves from the micrographs, which can then be used for later jobs.</p>
+</section>
+<section id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">#</a></h2>
+<section id="blob-picking">
+<h3>Blob Picking<a class="headerlink" href="#blob-picking" title="Permalink to this headline">#</a></h3>
+<p>Blob picking simply selects for a region of high signal with a specified radius and shape. Below are listed parameters which are not the default and should be adjusted according to evaluation of outputs:</p>
+<ul class="simple">
+<li><p>Minimum particle diameter</p>
+<ul>
+<li><p>Use 20 A, as this is a good approximation for a head-on view of a helix</p></li>
+</ul>
+</li>
+<li><p>Maximum particle diameter</p>
+<ul>
+<li><p>Must estimate according to size of the RNA particle viewing</p></li>
+<li><p>For a sample with &lt;200 nt, can probably estimate a larger diameter of 150-250 A</p></li>
+<li><p>This parameter is a good one to adjust after viewing the outputs in order to find the optimal value according to your sample</p></li>
+</ul>
+</li>
+<li><p>Use circular blob AND elliptical blob</p>
+<ul>
+<li><p>Elliptical blob for the helices</p></li>
+</ul>
+</li>
+<li><p>Lowpass filter to apply (A)</p>
+<ul>
+<li><p>Start with 5 and adjust visually</p></li>
+</ul>
+</li>
+<li><p>Min separation dist (diameters)</p>
+<ul>
+<li><p>2.5 → will calculate for a minimum separation of 50 A between particles</p></li>
+<li><p>This value is based off the min diameter</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="template-picking">
+<h3>Template Picking<a class="headerlink" href="#template-picking" title="Permalink to this headline">#</a></h3>
+<p>First, create the “Template Picker” job. The templates are taken from a round of 2D classification you have already performed, so this job must be done after using another picker, such as the blob picker. Below are the relevant parameters:</p>
+<ul class="simple">
+<li><p>Particle diameter (A)</p>
+<ul>
+<li><p>Estimated diameter in angstroms</p></li>
+</ul>
+</li>
+<li><p>Lowpass filter to apply (A)</p>
+<ul>
+<li><p>Start with 5, adjust visually</p></li>
+</ul>
+</li>
+<li><p>Min. separation dist (diameters)</p>
+<ul>
+<li><p>Recommend to have a separation distance of at least 50 A, so calculate what that fraction is (e.g. for a 150 A diameter, min sep distance is 0.33)</p></li>
+<li><p>Can adjust visually</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="inspect-picks">
+<h3>Inspect Picks<a class="headerlink" href="#inspect-picks" title="Permalink to this headline">#</a></h3>
+<p>Create an “Inspect Picks” job to view the picker’s choices. Clicking into the interactive part of the job, can adjust the NCC threshold and the upper and lower limits for the power using sliders. Click through multiple micrographs and try to adjust this to minimize the selected noise and maximize selected particles. Click “Done” when satisfied with the thresholds.</p>
+</section>
+<section id="extract-from-micrographs">
+<h3>Extract From Micrographs<a class="headerlink" href="#extract-from-micrographs" title="Permalink to this headline">#</a></h3>
+<p>Create the job “Extract From Micrographs” using the outputs from Inspect Picks. This will generate your particle stack which can then be used for 2D classification. Below are the adjusted parameters.</p>
+<ul class="simple">
+<li><p>Extraction box size (pix)</p>
+<ul>
+<li><p>Calculate this by using the estimated maximum diameter of the particle and the raw pixel size of the data</p></li>
+<li><p>Overestimate box size by about 1.5-2x the max diameter of the particle</p></li>
+<li><p>Round your calculated box size to the closest of the following values:</p>
+<ul>
+<li><p>16, 20, 24, 28, 32, 36, 40, 48, 56, 60, 64, 72, 80, 84, 96, 100, 108, 112, 120, 128, 140, 144, 160, 168, 180, 192, 196, 200, 216, 224, 240, 252, 256, 280, 288, 300, 320, 324, 336, 360, 384, 392, 400, 420, 432, 448, 480, 500, 504, 512, 540, 560, 576, 588, 600, 640, 648, 672, 700, 720, 756, 768, 784, 800, 840, 864, 896, 900, 960, 972, 980, 1000, 1008, 1024, 1080, 1120, 1152, 1176, 1200, 1260, 1280, 1296, 1344, 1372, 1400, 1440, 1500, 1512, 1536, 1568, 1600, 1620, 1680, 1728, 1764, 1792, 1800, 1920, 1944, 1960, 2000</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Fourier crop to box size (pix)</p>
+<ul>
+<li><p>Change this parameter if your extraction box size is above 200 pixels</p></li>
+<li><p>Choose a value of 200 pixels or smaller, but make sure you are choosing a value from the above list</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+</section>
 
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
-</div>
-
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -525,6 +784,20 @@ title="Open an issue"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="data_processing/Particle_picking.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Particle picking</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="2D_classification.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">2D Classification</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>
