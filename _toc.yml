@@ -34,7 +34,7 @@ parts:
       - file: data_processing/micrograph_curation
     - file: data_processing/Particle_picking
       sections:
-      - file: particle_picking.md
+      - file: particle_picking
       - file: 2D_classification
       - file: data_processing/blob_picking
       - file: data_processing/template_picking
