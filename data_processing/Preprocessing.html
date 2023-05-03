@@ -54,8 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Pre-processing" href="Preprocessing.html" />
-    <link rel="prev" title="Live Processing" href="Live_processing.html" />
+    <link rel="next" title="motion_correction" href="motion_correction.html" />
+    <link rel="prev" title="Pre-processing" href="Pre_processing.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -201,7 +201,7 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+  <a class="reference internal" href="Pre_processing.html">
    Pre-processing
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
@@ -209,9 +209,9 @@ const thebe_selector_output = ".output, .cell_output"
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Preprocessing.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Pre-processing
     </a>
    </li>
@@ -453,7 +453,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/rkretsch/RNA_cryoEM_protocols/issues/new?title=Issue%20on%20page%20%2Fdata_processing/Pre_processing.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/rkretsch/RNA_cryoEM_protocols/issues/new?title=Issue%20on%20page%20%2Fdata_processing/Preprocessing.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -481,7 +481,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/data_processing/Pre_processing.md"
+        <a href="../_sources/data_processing/Preprocessing.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -518,12 +518,68 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goal-to-generate-a-set-of-micrographs-from-a-given-set-of-movies-collected-on-a-cryoem-microscope-including-motion-correction-and-ctf-estimation">
+   Goal: to generate a set of micrographs from a given set of movies collected on a CryoEM microscope, including motion correction and CTF estimation.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#method">
+   Method
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-movies">
+     Import Movies
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#motion-correction">
+     Motion Correction
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ctf-estimation">
+     CTF estimation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#curate-micrographs">
+     Curate Micrographs
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -535,6 +591,51 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goal-to-generate-a-set-of-micrographs-from-a-given-set-of-movies-collected-on-a-cryoem-microscope-including-motion-correction-and-ctf-estimation">
+   Goal: to generate a set of micrographs from a given set of movies collected on a CryoEM microscope, including motion correction and CTF estimation.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#method">
+   Method
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-movies">
+     Import Movies
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#motion-correction">
+     Motion Correction
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ctf-estimation">
+     CTF estimation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#curate-micrographs">
+     Curate Micrographs
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -544,8 +645,72 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="pre-processing">
 <h1>Pre-processing<a class="headerlink" href="#pre-processing" title="Permalink to this headline">#</a></h1>
-<div class="toctree-wrapper compound">
-</div>
+<section id="goal-to-generate-a-set-of-micrographs-from-a-given-set-of-movies-collected-on-a-cryoem-microscope-including-motion-correction-and-ctf-estimation">
+<h2>Goal: to generate a set of micrographs from a given set of movies collected on a CryoEM microscope, including motion correction and CTF estimation.<a class="headerlink" href="#goal-to-generate-a-set-of-micrographs-from-a-given-set-of-movies-collected-on-a-cryoem-microscope-including-motion-correction-and-ctf-estimation" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<p>Data is collected by the microscope in movies with the given number of frames specified by the user. The purpose of motion correction is to combine all the frames in the movie into a single micrograph. As the sample is hit with the electron beam, it tends to bend and move, so this job must include some correction to the image due to the motion of the sample throughout the movie. Motion correction also weighs the earlier frames more heavily than the later ones as the later frames have greater radiation damage. Then, the contrast transfer function (CTF) of each micrograph is calculated, which is the sinusoidal wave function representing the uneven transfer of information content as a function of spatial frequency. The CTF provides useful information about the quality of the micrograph.</p>
+</section>
+<section id="method">
+<h2>Method<a class="headerlink" href="#method" title="Permalink to this headline">#</a></h2>
+<section id="import-movies">
+<h3>Import Movies<a class="headerlink" href="#import-movies" title="Permalink to this headline">#</a></h3>
+<p>First, the movies collected by the camera must be imported into Cryosparc for further operations to take place. This is done using the job “Import Movies”. Parameters for this job are listed below. Data paths are input as usual and the other parameters are calculated from the microscope settings that were used during data collection.</p>
+<ul class="simple">
+<li><p>Movies data path</p></li>
+<li><p>Gain reference path</p></li>
+<li><p>Raw pixel size (A)</p></li>
+<li><p>Accelerating voltage (kV)</p></li>
+<li><p>Spherical aberration (mm)</p>
+<ul>
+<li><p>This value is usually 2.7 mm</p></li>
+</ul>
+</li>
+<li><p>Total exposure dose (e/A^2)</p></li>
+</ul>
+</section>
+<section id="motion-correction">
+<h3>Motion Correction<a class="headerlink" href="#motion-correction" title="Permalink to this headline">#</a></h3>
+<p>Next, the movies are motion corrected to combine them into a single micrograph. This includes correcting for the motion of the sample as it is hit by the electron beam, as well as weighing micrographs according to the amount of radiation damage (later frames weighed less). For this, you can use the job “Patch motion correction (multi)” on cryosparc. In most cases, all parameters can be kept as defaults for this job.</p>
+<ul class="simple">
+<li><p>Note: for cryosparc patch-motion with falcon camera, you will need to exclude final frame (e.g. with 40 frames, put 39 as it counts from 0).</p></li>
+</ul>
+</section>
+<section id="ctf-estimation">
+<h3>CTF estimation<a class="headerlink" href="#ctf-estimation" title="Permalink to this headline">#</a></h3>
+<p>Next, the parameters of the contrast transfer function (CTF) of each micrograph can be estimated. This provides useful information about the quality of the micrograph. Some of the parameters of the CTF include the defocus of the micrograph, the wavelength of electrons, and the spherical aberration. Defocus is the only parameter which will vary for a given dataset, therefore, CTF estimation is really estimating the defocus of each micrograph. CTF correction occurs when the program fits the observed CTF to a theoretical model, which generates a cross-correlation score and a resolution limit for the micrograph. CTF estimation and correction is done using the job “Patch CTF (multi)” in which most parameters can be kept as default in most situations.</p>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=mPynoF2j6zc&amp;t=2s">Grant Jensen, CTF</a></p>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=GYDLhg49UQA">Grant Jensen, CTF Correction</a></p>
+</section>
+<section id="curate-micrographs">
+<h3>Curate Micrographs<a class="headerlink" href="#curate-micrographs" title="Permalink to this headline">#</a></h3>
+<p>Now that all micrographs are processed, you can manually reject those with bad ice or CTF correction.</p>
+<ol>
+<li><p>First, using the job “Exposure Tools”, split micrographs into groups of about 1000.</p></li>
+<li><p>Use the job “Curate Exposures” to manually look through each set of a thousand and find micrographs that are unusable.</p>
+<ul>
+<li><p>Check “Accept All” to accept all micrographs within the set.</p>
+<p><img alt="accept_all_exposures" src="../_images/accept_all_exposures.png" />
+<strong>Figure 1. “Accept all” in Curate Exposures job.</strong></p>
+</li>
+<li><p>Click the header of each column (e.g. “CTF Fit”) to show all micrographs arranged in order of that value.</p></li>
+<li><p>Click through micrographs to find the threshold within each parameter in which the micrographs appear usable.</p></li>
+<li><p>Click “Overview” and scroll down to the desired parameter.</p></li>
+<li><p>Use the sliding bars to select those micrographs which fall outside the given threshold of usability, and check “Reject Selection”.</p>
+<p><img alt="reject_exposures" src="../_images/reject_exposures.png" />
+<strong>Figure 2. “Reject selection” on Curate Exposures job.</strong></p>
+</li>
+<li><p>When satisfied with all remaining micrographs, check “Done”. This will output the accepted exposures.</p>
+<p><img alt="done_curating_exposures" src="../_images/done_curating_exposures.png" />
+<strong>Figure 3. “Done” in Curate Exposures job.</strong></p>
+</li>
+</ul>
+</li>
+<li><p>Finally, use a second “Exposure Tools” job to combine all accepted micrographs into a single set.</p></li>
+</ol>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -575,17 +740,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="Live_processing.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="Pre_processing.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Live Processing</p>
+            <p class="prev-next-title">Pre-processing</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="Preprocessing.html" title="next page">
+    <a class='right-next' id="next-link" href="motion_correction.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Pre-processing</p>
+        <p class="prev-next-title">motion_correction</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
