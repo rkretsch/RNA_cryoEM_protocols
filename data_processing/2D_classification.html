@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>2D_classification &#8212; RNA cryoEM protocols</title>
+    <title>2D Classification &#8212; RNA cryoEM protocols</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -286,7 +286,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     2D_classification
+     2D Classification
     </a>
    </li>
    <li class="toctree-l2">
@@ -313,7 +313,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="3D_classification.html">
-     3D_classification
+     3D Classification
     </a>
    </li>
    <li class="toctree-l2">
@@ -535,23 +535,94 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tips">
+   Tips
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#selecting-2d-classes">
+     Selecting 2D classes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cryosparc">
+     Cryosparc
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>2D_classification</h1>
+                <h1>2D Classification</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tips">
+   Tips
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#selecting-2d-classes">
+     Selecting 2D classes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cryosparc">
+     Cryosparc
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -560,7 +631,67 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="d-classification">
-<h1>2D_classification<a class="headerlink" href="#d-classification" title="Permalink to this headline">#</a></h1>
+<h1>2D Classification<a class="headerlink" href="#d-classification" title="Permalink to this headline">#</a></h1>
+<p><strong>Goal</strong>: to classify particles into groups representing various two dimensional views of the entire molecule.</p>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<p>Once you have a stack of particles representing your molecule, you can classify each of those views into a 2D orientation of that molecule. Since there are thousands of particles suspended in the ice in different orientations, each particle must be classified with other particles that resemble it, so we have groups of particles in separate orientations.</p>
+</section>
+<section id="tips">
+<h2>Tips<a class="headerlink" href="#tips" title="Permalink to this headline">#</a></h2>
+<section id="selecting-2d-classes">
+<h3>Selecting 2D classes<a class="headerlink" href="#selecting-2d-classes" title="Permalink to this headline">#</a></h3>
+<p>Parameters used to consider whether or not to select a class include: the clarity/resolution of the class, the number of particles in the class, if the full particle is visible. Additionally, try to select classes which represent all orientations. For RNA reconstruction, it is best to keep all particles that resemble RNA molecules at this stage. The goal is to strike a balance between keeping particle numbers high while removing “junk” or noise.</p>
+</section>
+<section id="cryosparc">
+<h3>Cryosparc<a class="headerlink" href="#cryosparc" title="Permalink to this headline">#</a></h3>
+<p>Create a “<strong>2D Class”</strong> job. The inputs for this job are the particles which have been extracted from a micrograph using the “Extract from Micrographs” job.</p>
+<p>The following parameters are helpful to modify for this job:</p>
+<ul class="simple">
+<li><p>Number of 2D classes</p></li>
+<li><ul>
+<li><p>The default value is 50, but can try a range from 40, 80, 100, etc.</p></li>
+</ul>
+</li>
+<li><p>Maximum resolution (A)</p></li>
+<li><ul>
+<li><p>Default is 6, but can increase resolution at later stages</p></li>
+<li><p>Recommended to keep it at 6 after initial blob picking</p></li>
+</ul>
+</li>
+<li><p>Initial classification uncertainty factor</p></li>
+<li><ul>
+<li><p>Controls the initial search for 2D references</p></li>
+<li><p>A lower number (e.g. 2-3) will give more junk classes (this is useful in the first few rounds of 2D class to help eliminate noise)</p></li>
+<li><p>A higher number (8-10) will result in a higher diversity of “better” or more refined classes (this is useful in the later steps of the process)</p></li>
+<li><p>Recommended to stick with 2 at this stage in the process</p></li>
+</ul>
+</li>
+<li><p>Circular mask diameter (A)</p></li>
+<li><ul>
+<li><p>Estimate how large of a window is necessary to view the whole particle in angstroms</p></li>
+</ul>
+</li>
+<li><p>Circular mask diameter outer (A)</p></li>
+<li><ul>
+<li><p>Can have a larger gradient from visible to opaque to see outer edges of the particle</p></li>
+</ul>
+</li>
+<li><p>Number of online-EM iterations</p></li>
+<li><ul>
+<li><p>Should increase this to at least 30-40 (helpful for smaller particles)</p></li>
+</ul>
+</li>
+<li><p>Batchsize per class</p></li>
+<li><ul>
+<li><p>Increase to at least 200-300 (better for smaller particles)</p></li>
+</ul>
+</li>
+</ul>
+<p>​	Again, might need to run a few rounds of this job trying out different parameters (esp diameter size) in order to determine optimal values.</p>
+<p>​	Finally, create the “<strong>Select 2D classes”</strong> job in order to interactively view the 2D classes created from the previous job.</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
