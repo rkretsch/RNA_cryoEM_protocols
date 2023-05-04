@@ -2,7 +2,5 @@
 
 __Goal__: to pick a stack of particles from a set of micrographs representing the molecule of interest.
 
-### Introduction
-
 The next step of the reconstruction process is to pick out the particles in the micrographs which are representative of your desired species and compile a stack of particles which are much smaller images of the molecule itself. There are multiple ways to achieve this; the first is blob picking, which simply selects for a region of high signal with a specified radius and shape. The second is template picking, which requires you to have already completed a 2D classification job and selected a set of views of the molecule. The algorithm then looks for particles which match the views or templates you have given it. Another method is deep picking, which uses a neural network to select particles. Using this method requires having hand-picked or curated a set of several thousand particles in order to train the model. After using a picker, which finds the locations of particles, you can inspect those picks and choose desired parameters of the cross correlation of the signal with the parameters of the picker, as well as the thresholds of the power of the signal. Finally, you must extract a stack of smaller views of the particles themselves from the micrographs, which can then be used for later jobs.
 

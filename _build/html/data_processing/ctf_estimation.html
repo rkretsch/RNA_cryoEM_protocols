@@ -211,8 +211,8 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="Preprocessing.html">
-     Pre-processing
+    <a class="reference internal" href="import_movies.html">
+     Import Movies
     </a>
    </li>
    <li class="toctree-l2">
@@ -234,7 +234,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="Particle_picking.html">
-   Particle picking
+   Particle selection (2D)
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -243,23 +243,18 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../particle_picking.html">
-     Particle Picking
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="blob_picking.html">
-     blob_picking
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="template_picking.html">
-     template_picking
+    <a class="reference internal" href="blob_template_picking.html">
+     Blob and Template Picking
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="deep_picking.html">
      deep picking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="extract_particles.html">
+     Extract Boxed Particles
     </a>
    </li>
    <li class="toctree-l2">
@@ -541,8 +536,8 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#cryosparc">
-   Cryosparc
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
   </a>
  </li>
 </ul>
@@ -565,8 +560,8 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#cryosparc">
-   Cryosparc
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
   </a>
  </li>
 </ul>
@@ -581,11 +576,26 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="ctf-estimation">
 <h1>CTF Estimation<a class="headerlink" href="#ctf-estimation" title="Permalink to this headline">#</a></h1>
-<section id="cryosparc">
-<h2>Cryosparc<a class="headerlink" href="#cryosparc" title="Permalink to this headline">#</a></h2>
-<p>Next, the parameters of the contrast transfer function (CTF) of each micrograph can be estimated. This provides useful information about the quality of the micrograph. Some of the parameters of the CTF include the defocus of the micrograph, the wavelength of electrons, and the spherical aberration. Defocus is the only parameter which will vary for a given dataset, therefore, CTF estimation is really estimating the defocus of each micrograph. CTF correction occurs when the program fits the observed CTF to a theoretical model, which generates a cross-correlation score and a resolution limit for the micrograph. CTF estimation and correction is done using the job “Patch CTF (multi)” in which most parameters can be kept as default in most situations.</p>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<p>Next, the parameters of the contrast transfer function (CTF) of each micrograph can be estimated. This provides useful information about the quality of the micrograph. Some of the parameters of the CTF include the defocus of the micrograph, the wavelength of electrons, and the spherical aberration. Defocus is the only parameter which will vary for a given dataset, therefore, CTF estimation is really estimating the defocus of each micrograph. CTF correction occurs when the program fits the observed CTF to a theoretical model, which generates a cross-correlation score and a resolution limit for the micrograph.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
 <p><a class="reference external" href="https://www.youtube.com/watch?v=mPynoF2j6zc&amp;t=2s">Grant Jensen, CTF</a></p>
 <p><a class="reference external" href="https://www.youtube.com/watch?v=GYDLhg49UQA">Grant Jensen, CTF Correction</a></p>
+</div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="626c55d6-adb4-4658-8a69-d0f1d2c8d1dc" name="610c41b4-524f-4fb2-9d4c-7077c6ff3e79" type="radio">
+</input><label class="sd-tab-label" for="626c55d6-adb4-4658-8a69-d0f1d2c8d1dc">
+Cryosparc Patch CTF</label><div class="sd-tab-content docutils">
+<p>CTF estimation and correction is done using the job “Patch CTF (multi)” in which most parameters can be kept as default in most situations.</p>
+</div>
+<input id="6eb18cec-d223-4ba4-86b9-2b9d58cedcec" name="610c41b4-524f-4fb2-9d4c-7077c6ff3e79" type="radio">
+</input><label class="sd-tab-label" for="6eb18cec-d223-4ba4-86b9-2b9d58cedcec">
+CTFfind4</label><div class="sd-tab-content docutils">
+<p>TODO</p>
+</div>
+</div>
 </section>
 </section>
 

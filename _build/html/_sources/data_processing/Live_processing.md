@@ -2,17 +2,16 @@
 
 
 
-#### Goal: to pre-process, curate, and begin picking particles during live data collection on the microscope. 
-
-#### Introduction
+__Goal__: pre-process, curate, and begin picking particles during live data collection on the microscope. 
 
 While collecting data, the microscope is collecting thousands of movies of the selected holes and squares on your grid. You can continuously import these movies while they are still being collected, where it will begin the steps of pre-processing, particle picking, and even 2D classification or other steps. First, these movies must be compiled into a single micrograph, which involves processing the motion of the sample that occurred after it was hit with the electron beam, as well as downweighting the radiation damage done to the samples. Then, the contrast transfer function (CTF) for each micrograph must be calculated, which calculates the resolution and defocus of each micrograph. Finally, micrographs can be automatically or manually curated, to eliminate those with bad ice or resolution. Additionally, the processes of picking particles and 2D classification can be started here while still collecting and importing data. 
 
-### S2C2 Pipeline
 
-### Cryosparc live
-
-#### Method
+````{tab-set}
+```{tab-item} S2C2 Pipeline
+TODO
+```
+```{tab-item} Cryosparc Live
 
 1. Before you can begin processing live, you must start a new project in regular cryosparc. Open your regular cryosparc desktop (localhost:39100, localhost:39200, etc.) and click the icon to the left of the projects tab at the top (shown in Figure 1). This will open a screen which should show all current projects. 
 
@@ -89,7 +88,8 @@ While collecting data, the microscope is collecting thousands of movies of the s
 
 21. To extract the pre-processed micrographs and particles extracted from the blob picker, go to the “Overview” tab on the left, and click “Extract all Micrographs” and “Extract all Particle Picks”. Now you can move your data processing to regular cryosparc.
 
-
+```
+````
 
 
 

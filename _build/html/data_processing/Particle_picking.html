@@ -513,36 +513,12 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
@@ -554,19 +530,6 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -577,10 +540,7 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="particle-selection-2d">
 <h1>Particle selection (2D)<a class="headerlink" href="#particle-selection-2d" title="Permalink to this headline">#</a></h1>
 <p><strong>Goal</strong>: to pick a stack of particles from a set of micrographs representing the molecule of interest.</p>
-<section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
 <p>The next step of the reconstruction process is to pick out the particles in the micrographs which are representative of your desired species and compile a stack of particles which are much smaller images of the molecule itself. There are multiple ways to achieve this; the first is blob picking, which simply selects for a region of high signal with a specified radius and shape. The second is template picking, which requires you to have already completed a 2D classification job and selected a set of views of the molecule. The algorithm then looks for particles which match the views or templates you have given it. Another method is deep picking, which uses a neural network to select particles. Using this method requires having hand-picked or curated a set of several thousand particles in order to train the model. After using a picker, which finds the locations of particles, you can inspect those picks and choose desired parameters of the cross correlation of the signal with the parameters of the picker, as well as the thresholds of the power of the signal. Finally, you must extract a stack of smaller views of the particles themselves from the micrographs, which can then be used for later jobs.</p>
-</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>

@@ -55,7 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="paticle_picking_strategies" href="paticle_picking_strategies.html" />
-    <link rel="prev" title="deep picking" href="deep_picking.html" />
+    <link rel="prev" title="Extract Boxed Particles" href="extract_particles.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -122,12 +122,12 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../pcr_assembly.html">
+  <a class="reference internal" href="../prepare_rna/pcr_assembly.html">
    PCR assembly
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../IVT.html">
+  <a class="reference internal" href="../prepare_rna/IVT.html">
    <em>
     in vitro
    </em>
@@ -135,7 +135,7 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../rna_analysis.html">
+  <a class="reference internal" href="../prepare_rna/rna_analysis.html">
    RNA anlysis
   </a>
  </li>
@@ -147,17 +147,17 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../Folding.html">
+  <a class="reference internal" href="../grid_preperation/Folding.html">
    Folding
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../Freezing.html">
+  <a class="reference internal" href="../grid_preperation/Freezing.html">
    Freezing
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../Clipping.html">
+  <a class="reference internal" href="../grid_preperation/Clipping.html">
    Clipping
   </a>
  </li>
@@ -169,17 +169,22 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../Screening.html">
+  <a class="reference internal" href="../scope/Loading.html">
+   Loading
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../scope/Screening.html">
    Screening
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../Alignment.html">
+  <a class="reference internal" href="../scope/Alignment.html">
    Alignmnet
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../Data_collection.html">
+  <a class="reference internal" href="../scope/Data_collection.html">
    Data Collection
   </a>
  </li>
@@ -190,9 +195,14 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1">
   <a class="reference internal" href="Live_processing.html">
    Live Processing
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="Pre_processing.html">
+   Pre-processing
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -201,87 +211,50 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../Live_processing.html">
-     Live Processing
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="cryosparc_live.html">
-     cryosparc_live
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="S2C2_pipeline.html">
-     S2C2_pipeline
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="Pre_processing.html">
-   Pre-processing
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Preprocessing.html">
-     Pre-processing
+    <a class="reference internal" href="import_movies.html">
+     Import Movies
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="motion_correction.html">
-     motion_correction
+     Motion Correction
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="ctf_estimation.html">
-     ctf_estimation
+     CTF Estimation
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="micrograph_curation.html">
-     micrograph_curation
+     Micrograph Curation
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="Particle_picking.html">
-   Particle picking
+   Particle selection (2D)
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="../particle_picking.html">
-     Particle Picking
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../2D_classification.html">
-     2D Classification
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="blob_picking.html">
-     blob_picking
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="template_picking.html">
-     template_picking
+    <a class="reference internal" href="blob_template_picking.html">
+     Blob and Template Picking
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="deep_picking.html">
      deep picking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="extract_particles.html">
+     Extract Boxed Particles
     </a>
    </li>
    <li class="toctree-l2 current active">
@@ -300,8 +273,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="3D_reconstruction.html">
    3D reconstruction
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -337,8 +310,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="Software.html">
    Software
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -346,6 +319,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="acquire_sdf.html">
      acquire_sdf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="workstations_getting_started.html">
+     Getting started on Das Lab Workstations
     </a>
    </li>
    <li class="toctree-l2">
@@ -535,53 +513,12 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tips">
-   Tips
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#selecting-2d-classes">
-     Selecting 2D classes
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#cryosparc">
-     Cryosparc
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
@@ -593,36 +530,6 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tips">
-   Tips
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#selecting-2d-classes">
-     Selecting 2D classes
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#cryosparc">
-     Cryosparc
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -633,18 +540,18 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="d-classification">
 <h1>2D Classification<a class="headerlink" href="#d-classification" title="Permalink to this headline">#</a></h1>
 <p><strong>Goal</strong>: to classify particles into groups representing various two dimensional views of the entire molecule.</p>
-<section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
 <p>Once you have a stack of particles representing your molecule, you can classify each of those views into a 2D orientation of that molecule. Since there are thousands of particles suspended in the ice in different orientations, each particle must be classified with other particles that resemble it, so we have groups of particles in separate orientations.</p>
-</section>
-<section id="tips">
-<h2>Tips<a class="headerlink" href="#tips" title="Permalink to this headline">#</a></h2>
-<section id="selecting-2d-classes">
-<h3>Selecting 2D classes<a class="headerlink" href="#selecting-2d-classes" title="Permalink to this headline">#</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<div class="admonition-selecting-2d-classes admonition">
+<p class="admonition-title">Selecting 2D classes</p>
 <p>Parameters used to consider whether or not to select a class include: the clarity/resolution of the class, the number of particles in the class, if the full particle is visible. Additionally, try to select classes which represent all orientations. For RNA reconstruction, it is best to keep all particles that resemble RNA molecules at this stage. The goal is to strike a balance between keeping particle numbers high while removing “junk” or noise.</p>
-</section>
-<section id="cryosparc">
-<h3>Cryosparc<a class="headerlink" href="#cryosparc" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="e7aae340-313c-4a90-bb12-c04fc16e4ef6" name="9e53aefd-bb9b-4420-891e-492bb2844325" type="radio">
+</input><label class="sd-tab-label" for="e7aae340-313c-4a90-bb12-c04fc16e4ef6">
+Cryosparc</label><div class="sd-tab-content docutils">
 <p>Create a “<strong>2D Class”</strong> job. The inputs for this job are the particles which have been extracted from a micrograph using the “Extract from Micrographs” job.</p>
 <p>The following parameters are helpful to modify for this job:</p>
 <ul class="simple">
@@ -690,8 +597,8 @@ title="Print to PDF"
 </ul>
 <p>​	Again, might need to run a few rounds of this job trying out different parameters (esp diameter size) in order to determine optimal values.</p>
 <p>​	Finally, create the “<strong>Select 2D classes”</strong> job in order to interactively view the 2D classes created from the previous job.</p>
-</section>
-</section>
+</div>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -721,11 +628,11 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="deep_picking.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="extract_particles.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">deep picking</p>
+            <p class="prev-next-title">Extract Boxed Particles</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="paticle_picking_strategies.html" title="next page">
