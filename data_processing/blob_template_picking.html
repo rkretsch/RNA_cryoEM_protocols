@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Pre-processing &#8212; RNA cryoEM protocols</title>
+    <title>Blob and Template Picking &#8212; RNA cryoEM protocols</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -54,8 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Import Movies" href="import_movies.html" />
-    <link rel="prev" title="Live Processing" href="Live_processing.html" />
+    <link rel="next" title="deep picking" href="deep_picking.html" />
+    <link rel="prev" title="Particle Picking" href="../particle_picking.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -200,11 +200,11 @@ const thebe_selector_output = ".output, .cell_output"
    Live Processing
   </a>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="Pre_processing.html">
    Pre-processing
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
@@ -232,23 +232,23 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="Particle_picking.html">
    Particle selection (2D)
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="../particle_picking.html">
      Particle Picking
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="blob_template_picking.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Blob and Template Picking
     </a>
    </li>
@@ -453,7 +453,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/rkretsch/RNA_cryoEM_protocols/issues/new?title=Issue%20on%20page%20%2Fdata_processing/Pre_processing.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/rkretsch/RNA_cryoEM_protocols/issues/new?title=Issue%20on%20page%20%2Fdata_processing/blob_template_picking.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -481,7 +481,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/data_processing/Pre_processing.md"
+        <a href="../_sources/data_processing/blob_template_picking.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -541,8 +541,18 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
+  <a class="reference internal nav-link" href="#cryosparc-blob-picking">
+   Cryosparc Blob Picking
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cryosparc-template-picking">
+   Cryosparc Template Picking
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cryosparc-inpsect-picks">
+   Cryosparc Inpsect Picks
   </a>
  </li>
 </ul>
@@ -554,7 +564,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Pre-processing</h1>
+                <h1>Blob and Template Picking</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -565,8 +575,18 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
+  <a class="reference internal nav-link" href="#cryosparc-blob-picking">
+   Cryosparc Blob Picking
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cryosparc-template-picking">
+   Cryosparc Template Picking
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cryosparc-inpsect-picks">
+   Cryosparc Inpsect Picks
   </a>
  </li>
 </ul>
@@ -579,16 +599,68 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="pre-processing">
-<h1>Pre-processing<a class="headerlink" href="#pre-processing" title="Permalink to this headline">#</a></h1>
-<p><strong>Goal</strong>: to generate a set of micrographs from a given set of movies collected on a CryoEM microscope, including motion correction and CTF estimation.</p>
-<section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
-<p>Data is collected by the microscope in movies with the given number of frames specified by the user. The purpose of motion correction is to combine all the frames in the movie into a single micrograph. As the sample is hit with the electron beam, it tends to bend and move, so this job must include some correction to the image due to the motion of the sample throughout the movie. Motion correction also weighs the earlier frames more heavily than the later ones as the later frames have greater radiation damage. Then, the contrast transfer function (CTF) of each micrograph is calculated, which is the sinusoidal wave function representing the uneven transfer of information content as a function of spatial frequency. The CTF provides useful information about the quality of the micrograph.</p>
-<p>Suggested reading <a class="reference external" href="https://cryoem101.org/chapter-5/">CryoEM 101, Image Processing and Data Analysis</a></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="blob-and-template-picking">
+<h1>Blob and Template Picking<a class="headerlink" href="#blob-and-template-picking" title="Permalink to this headline">#</a></h1>
+<section id="cryosparc-blob-picking">
+<h2>Cryosparc Blob Picking<a class="headerlink" href="#cryosparc-blob-picking" title="Permalink to this headline">#</a></h2>
+<p>Blob picking simply selects for a region of high signal with a specified radius and shape. Below are listed parameters which are not the default and should be adjusted according to evaluation of outputs:</p>
+<ul class="simple">
+<li><p>Minimum particle diameter</p>
+<ul>
+<li><p>Use 20 A, as this is a good approximation for a head-on view of a helix</p></li>
+</ul>
+</li>
+<li><p>Maximum particle diameter</p>
+<ul>
+<li><p>Must estimate according to size of the RNA particle viewing</p></li>
+<li><p>For a sample with &lt;200 nt, can probably estimate a larger diameter of 150-250 A</p></li>
+<li><p>This parameter is a good one to adjust after viewing the outputs in order to find the optimal value according to your sample</p></li>
+</ul>
+</li>
+<li><p>Use circular blob AND elliptical blob</p>
+<ul>
+<li><p>Elliptical blob for the helices</p></li>
+</ul>
+</li>
+<li><p>Lowpass filter to apply (A)</p>
+<ul>
+<li><p>Start with 5 and adjust visually</p></li>
+</ul>
+</li>
+<li><p>Min separation dist (diameters)</p>
+<ul>
+<li><p>2.5 → will calculate for a minimum separation of 50 A between particles</p></li>
+<li><p>This value is based off the min diameter</p></li>
+</ul>
+</li>
+</ul>
 </section>
-<div class="toctree-wrapper compound">
-</div>
+<section id="cryosparc-template-picking">
+<h2>Cryosparc Template Picking<a class="headerlink" href="#cryosparc-template-picking" title="Permalink to this headline">#</a></h2>
+<p>First, create the “Template Picker” job. The templates are taken from a round of 2D classification you have already performed, so this job must be done after using another picker, such as the blob picker. Below are the relevant parameters:</p>
+<ul class="simple">
+<li><p>Particle diameter (A)</p>
+<ul>
+<li><p>Estimated diameter in angstroms</p></li>
+</ul>
+</li>
+<li><p>Lowpass filter to apply (A)</p>
+<ul>
+<li><p>Start with 5, adjust visually</p></li>
+</ul>
+</li>
+<li><p>Min. separation dist (diameters)</p>
+<ul>
+<li><p>Recommend to have a separation distance of at least 50 A, so calculate what that fraction is (e.g. for a 150 A diameter, min sep distance is 0.33)</p></li>
+<li><p>Can adjust visually</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="cryosparc-inpsect-picks">
+<h2>Cryosparc Inpsect Picks<a class="headerlink" href="#cryosparc-inpsect-picks" title="Permalink to this headline">#</a></h2>
+<p>Create an “Inspect Picks” job to view the picker’s choices. Clicking into the interactive part of the job, can adjust the NCC threshold and the upper and lower limits for the power using sliders. Click through multiple micrographs and try to adjust this to minimize the selected noise and maximize selected particles. Click “Done” when satisfied with the thresholds.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -618,17 +690,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="Live_processing.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../particle_picking.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Live Processing</p>
+            <p class="prev-next-title">Particle Picking</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="import_movies.html" title="next page">
+    <a class='right-next' id="next-link" href="deep_picking.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Import Movies</p>
+        <p class="prev-next-title">deep picking</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Pre-processing &#8212; RNA cryoEM protocols</title>
+    <title>Extract Boxed Particles &#8212; RNA cryoEM protocols</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -54,8 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Import Movies" href="import_movies.html" />
-    <link rel="prev" title="Live Processing" href="Live_processing.html" />
+    <link rel="next" title="2D Classification" href="2D_classification.html" />
+    <link rel="prev" title="deep picking" href="deep_picking.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -200,11 +200,11 @@ const thebe_selector_output = ".output, .cell_output"
    Live Processing
   </a>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="Pre_processing.html">
    Pre-processing
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
@@ -232,16 +232,16 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="Particle_picking.html">
    Particle selection (2D)
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="../particle_picking.html">
      Particle Picking
@@ -257,8 +257,8 @@ const thebe_selector_output = ".output, .cell_output"
      deep picking
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="extract_particles.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Extract Boxed Particles
     </a>
    </li>
@@ -453,7 +453,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/rkretsch/RNA_cryoEM_protocols/issues/new?title=Issue%20on%20page%20%2Fdata_processing/Pre_processing.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/rkretsch/RNA_cryoEM_protocols/issues/new?title=Issue%20on%20page%20%2Fdata_processing/extract_particles.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -481,7 +481,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/data_processing/Pre_processing.md"
+        <a href="../_sources/data_processing/extract_particles.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -541,8 +541,8 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
+  <a class="reference internal nav-link" href="#cryosparc-extract-from-micrographs">
+   Cryosparc Extract From Micrographs
   </a>
  </li>
 </ul>
@@ -554,7 +554,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Pre-processing</h1>
+                <h1>Extract Boxed Particles</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -565,8 +565,8 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
+  <a class="reference internal nav-link" href="#cryosparc-extract-from-micrographs">
+   Cryosparc Extract From Micrographs
   </a>
  </li>
 </ul>
@@ -579,16 +579,31 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="pre-processing">
-<h1>Pre-processing<a class="headerlink" href="#pre-processing" title="Permalink to this headline">#</a></h1>
-<p><strong>Goal</strong>: to generate a set of micrographs from a given set of movies collected on a CryoEM microscope, including motion correction and CTF estimation.</p>
-<section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
-<p>Data is collected by the microscope in movies with the given number of frames specified by the user. The purpose of motion correction is to combine all the frames in the movie into a single micrograph. As the sample is hit with the electron beam, it tends to bend and move, so this job must include some correction to the image due to the motion of the sample throughout the movie. Motion correction also weighs the earlier frames more heavily than the later ones as the later frames have greater radiation damage. Then, the contrast transfer function (CTF) of each micrograph is calculated, which is the sinusoidal wave function representing the uneven transfer of information content as a function of spatial frequency. The CTF provides useful information about the quality of the micrograph.</p>
-<p>Suggested reading <a class="reference external" href="https://cryoem101.org/chapter-5/">CryoEM 101, Image Processing and Data Analysis</a></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="extract-boxed-particles">
+<h1>Extract Boxed Particles<a class="headerlink" href="#extract-boxed-particles" title="Permalink to this headline">#</a></h1>
+<section id="cryosparc-extract-from-micrographs">
+<h2>Cryosparc Extract From Micrographs<a class="headerlink" href="#cryosparc-extract-from-micrographs" title="Permalink to this headline">#</a></h2>
+<p>Create the job “Extract From Micrographs” using the outputs from Inspect Picks. This will generate your particle stack which can then be used for 2D classification. Below are the adjusted parameters.</p>
+<ul class="simple">
+<li><p>Extraction box size (pix)</p>
+<ul>
+<li><p>Calculate this by using the estimated maximum diameter of the particle and the raw pixel size of the data</p></li>
+<li><p>Overestimate box size by about 1.5-2x the max diameter of the particle</p></li>
+<li><p>Round your calculated box size to the closest of the following values:</p>
+<ul>
+<li><p>16, 20, 24, 28, 32, 36, 40, 48, 56, 60, 64, 72, 80, 84, 96, 100, 108, 112, 120, 128, 140, 144, 160, 168, 180, 192, 196, 200, 216, 224, 240, 252, 256, 280, 288, 300, 320, 324, 336, 360, 384, 392, 400, 420, 432, 448, 480, 500, 504, 512, 540, 560, 576, 588, 600, 640, 648, 672, 700, 720, 756, 768, 784, 800, 840, 864, 896, 900, 960, 972, 980, 1000, 1008, 1024, 1080, 1120, 1152, 1176, 1200, 1260, 1280, 1296, 1344, 1372, 1400, 1440, 1500, 1512, 1536, 1568, 1600, 1620, 1680, 1728, 1764, 1792, 1800, 1920, 1944, 1960, 2000</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Fourier crop to box size (pix)</p>
+<ul>
+<li><p>Change this parameter if your extraction box size is above 200 pixels</p></li>
+<li><p>Choose a value of 200 pixels or smaller, but make sure you are choosing a value from the above list</p></li>
+</ul>
+</li>
+</ul>
 </section>
-<div class="toctree-wrapper compound">
-</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -618,17 +633,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="Live_processing.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="deep_picking.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Live Processing</p>
+            <p class="prev-next-title">deep picking</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="import_movies.html" title="next page">
+    <a class='right-next' id="next-link" href="2D_classification.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Import Movies</p>
+        <p class="prev-next-title">2D Classification</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
