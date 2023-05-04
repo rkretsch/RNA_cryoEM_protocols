@@ -579,20 +579,23 @@ title="Print to PDF"
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
 <p>Next, the movies are motion corrected to combine them into a single micrograph. This includes correcting for the motion of the sample as it is hit by the electron beam, as well as weighing micrographs according to the amount of radiation damage (later frames weighed less).</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-#### Cryosparc<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">For this, you can use the job “Patch motion correction (multi)” on cryosparc. In most cases, all parameters can be kept as defaults for this job.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="3e010522-8165-4f89-97fb-49a630556f1f" name="fb1451f5-d8c3-48e2-81c9-a44afbefca7d" type="radio">
+</input><label class="sd-tab-label" for="3e010522-8165-4f89-97fb-49a630556f1f">
+Cryosparc Patch Motion</label><div class="sd-tab-content docutils">
+<p>For this, you can use the job “Patch motion correction (multi)” on cryosparc. In most cases, all parameters can be kept as defaults for this job.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p class="sd-card-text">For cryosparc patch-motion with falcon 4 camera, you will need to exclude final frame (e.g. with 40 frames, put 39 as it counts from 0).</p>
+<p>For cryosparc patch-motion with falcon 4 camera, you will need to exclude final frame (e.g. with 40 frames, put 39 as it counts from 0).</p>
 </div>
 </div>
-</details></section>
+<input id="50fc959e-6382-495c-b34f-d99b61796690" name="fb1451f5-d8c3-48e2-81c9-a44afbefca7d" type="radio">
+</input><label class="sd-tab-label" for="50fc959e-6382-495c-b34f-d99b61796690">
+Motioncor2</label><div class="sd-tab-content docutils">
+<p>TODO</p>
+</div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
