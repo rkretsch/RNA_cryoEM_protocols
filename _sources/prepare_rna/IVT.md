@@ -30,8 +30,8 @@ T7 polymerase catalyzes the formation of RNA from DNA in the 5’-->3’ directi
     * 2000ng DNA or less
     * 2µL T7 mix *add last
     * ddH2O to bring to 20µL
-1. Incubate at 37&deg;C for minimum 4 hours, especially if you have a mutant promoter do this overnight, if PAGE-purifying it is safe to run all overnight (off-products from running too long are generally a different length). Note down time incubated for.
-2. Add 2µL DNase I per reaction. Incubate 15min at 37&deg;C to digest any left over DNA.
+1. Incubate at 37&deg;C for minimum 4 hours, especially if you have a mutant promoter do this overnight, if dPAGE-purifying it is safe to run all overnight (off-products from running too long are generally a different length). Note down time incubated for.
+2. Add 2µL DNase I per reaction. Incubate 15min at 37&deg;C to digest any leftover DNA template.
 
 :::
 
@@ -56,16 +56,17 @@ T7 polymerase catalyzes the formation of RNA from DNA in the 5’-->3’ directi
 
 9. Immediately in -80&deg;C!
 
-    :::
 
-    :::{dropdown} {material-regular}`format_list_numbered` 3. RNA Quantification
+:::
 
-    1. Dilute RNA [5x and/or 25x dilution recommended: 2µL ddH2O and 0.5µL sample in PCR tube] If you bring your own pipette to the non-RNAse free nanodrop, wipe it off with RNAse zap before using again.
-    2. Wipe down the NanoDrop. Calibrate with 1µL ddH20. Set to RNA. 
-    3. Blank and zero with 1µL ddH2O. 
-    4. Load 1µL of sample, take measurement.
-    5. Check for contaminants. Expect A260/A280~2.1. Do not want a 230 shoulder.  Generally, if A260 above 70 needs to dilute further. 
-    6. Write down: A260, A280, and Reported ng/µL. 
-    7. Calculate concentration: RNA (μM) = [A260 x 40,000] / [330 x length (bp)]
+:::{dropdown} {material-regular}`format_list_numbered` 3. RNA Quantification
 
-    :::
+1. Dilute RNA [5x and/or 25x dilution recommended: 2µL ddH2O and 0.5µL sample in PCR tube] If you bring your own pipette to the non-RNAse free nanodrop, wipe it off with RNAse zap before using again.
+2. Wipe down the NanoDrop. Calibrate with 1µL ddH20. Set to RNA. 
+3. Blank and zero with 1µL ddH2O. 
+4. Load 1µL of sample, take measurement.
+5. Check for contaminants. Expect A260/A280~2.1. Do not want a 230 shoulder.  Generally, if A260 above 70 needs to dilute further. 
+6. Write down: A260, A280, and Reported ng/µL. 
+7. Calculate concentration: RNA (μM) = [A260 x 40,000] / [330 x length (bp)]
+
+:::
