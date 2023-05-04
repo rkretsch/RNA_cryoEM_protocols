@@ -46,7 +46,7 @@ T7 polymerase catalyzes the formation of RNA from DNA in the 5’-->3’ directi
 
 4. Add 700µL of Wash Buffer to the column. Spin at 13,000g for 30sec. Discard flow-through.
 
-5. Add 400µL of Wash Buffer to column. Spin at 13,000g for 30sec. Discard flow-through.
+5. Add 400µL of Wash Buffer to the column. Spin at 13,000g for 30sec. Discard flow-through.
 
 6. Spin at 13,000g for 2min.
 

@@ -678,12 +678,15 @@ title="Print to PDF"
 <li><p class="sd-card-text">Before starting, make sure there is a thermocycler available and reserve with tape.</p></li>
 <li><p class="sd-card-text">Each standard reaction is 50µL, recommend 4 standard reactions per assembly. Label PCR tubes for each assembly. <em>Recognize the capacity of your thermocycler, if it is 100µL and you want 4 standard reactions per assembly, each assembly will need to be done in 2 PCR tubes (100µL each, 200µL total).</em></p></li>
 <li><p class="sd-card-text">For each assembly add 16µL of [<strong>primer MM</strong>] per standard reaction (eg 64µL for 4 standard reactions) directly to the PCR tubes.</p></li>
-<li><p class="sd-card-text">Make a Phusion MM for 1.1x the number of reactions you need (number of assemblies x number of standard reactions per assembly). Per reaction you need:
-22µL ddH2O
-10µL HF-buffer
-1µL dNTPs (10mM)
-1µL Phusion polymerase <strong>add last minute</strong>
+<li><p class="sd-card-text">Make a Phusion MM for 1.1x the number of reactions you need (number of assemblies x number of standard reactions per assembly). Per reaction you need:</p>
+<ul class="simple">
+<li><p class="sd-card-text">22µL ddH2O</p></li>
+<li><p class="sd-card-text">10µL HF-buffer</p></li>
+<li><p class="sd-card-text">1µL dNTPs (10mM)</p></li>
+<li><p class="sd-card-text">1µL Phusion polymerase <strong>add last minute</strong>
 Vortex and spin down.</p></li>
+</ul>
+</li>
 <li><p class="sd-card-text">Add 34µL of Phusion MM per standard reaction to each of your PCR tubes.</p></li>
 <li><p class="sd-card-text">Vortex and spin down. Immediately place in thermocycler.</p></li>
 </ol>
@@ -727,8 +730,8 @@ Vortex and spin down.</p></li>
 </ol>
 <p class="sd-card-text"><em>Prepare samples:</em></p>
 <ol class="simple">
-<li><p class="sd-card-text">For PCR-assembly products recommend: 1µL sample, 1µL dye, 4µL ddH2O. In general need dye to be ⅙ of total.</p></li>
-<li><p class="sd-card-text">Choose ladder according to size of product (usually 50bp ladder suffices). Ladder is ready-to-go; do not add ddH2O or dye.</p></li>
+<li><p class="sd-card-text">For PCR-assembly products recommend: 1µL sample, 1µL dye, 4µL ddH2O. In general need dyes are 6x so need to be ⅙ of total.</p></li>
+<li><p class="sd-card-text">Choose ladder according to size of product (usually 50bp ladder suffices). If ladder is ready-to-go; do not add ddH2O or dye.</p></li>
 <li><p class="sd-card-text">Plan out lanes, note can leave lanes empty. Make sure the ladder(s) reasonable distance to every sample.</p></li>
 </ol>
 <p class="sd-card-text"><em>Load samples:</em></p>
@@ -818,11 +821,12 @@ If DNA gel reveals multiple bands, excise the band of interest and use the Qiage
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<svg version="4.0.0.63c5cb3" width="1.0em" height="1.0em" class="sd-material-icon sd-material-icon-format_list_numbered" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M2 17h2v.5H3v1h1v.5H2v1h3v-4H2v1zm1-9h1V4H2v1h1v3zm-1 3h1.8L2 13.1v.9h3v-1H3.2L5 10.9V10H2v1zm5-6v2h14V5H7zm0 14h14v-2H7v2zm0-6h14v-2H7v2z"></path></svg> 7. DNA gel purification<div class="sd-summary-down docutils">
+<svg version="4.0.0.63c5cb3" width="1.0em" height="1.0em" class="sd-material-icon sd-material-icon-format_list_numbered" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M2 17h2v.5H3v1h1v.5H2v1h3v-4H2v1zm1-9h1V4H2v1h1v3zm-1 3h1.8L2 13.1v.9h3v-1H3.2L5 10.9V10H2v1zm5-6v2h14V5H7zm0 14h14v-2H7v2zm0-6h14v-2H7v2z"></path></svg> 7. <em>optional</em> DNA gel purification<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">If DNA gel reveals multiple bands, you may want to gel purify the DNA of the correct length. Make a 1% agarose gel and load your sample, excise the band of interest and use the Qiagen QiaQuick Gel Extraction Kit to gel-purify the band before IVT.</p>
 <ol class="simple">
 <li><p class="sd-card-text">Image the gel under blue light, mark the band with a sharpie (red).</p></li>
 <li><p class="sd-card-text">Weigh an empty 1.5 mL microcentrifuge tube.</p></li>
@@ -839,7 +843,7 @@ If DNA gel reveals multiple bands, excise the band of interest and use the Qiage
 <li><p class="sd-card-text">Spin at 13,000xg for 1 min to remove residual wash buffer.</p></li>
 <li><p class="sd-card-text">Move column to a well-labeled 1.5 mL tube. Dry 15 min with an open column.</p></li>
 <li><p class="sd-card-text">Add 30 uL ddH2O to the membrane. Wait 10 min. Spin at 10,000 for 1 min. Discard column not flowthrough.</p></li>
-<li><p class="sd-card-text">Save DNA in -20C <strong>[dsDNA]</strong></p></li>
+<li><p class="sd-card-text">Save DNA in -20°C <strong>[dsDNA]</strong></p></li>
 </ol>
 </div>
 </details><p>change edit to copy on gslides!!

@@ -72,11 +72,11 @@ If the assembly fails, first try another polymerase.
 3. For each assembly add 16µL of [**primer MM**] per standard reaction (eg 64µL for 4 standard reactions) directly to the PCR tubes.
 
 4. Make a Phusion MM for 1.1x the number of reactions you need (number of assemblies x number of standard reactions per assembly). Per reaction you need:
-   	22µL ddH2O
-   	10µL HF-buffer
-   	1µL dNTPs (10mM)
-   	1µL Phusion polymerase **add last minute**
-   Vortex and spin down.
+   	- 22µL ddH2O
+   	- 10µL HF-buffer
+   	- 1µL dNTPs (10mM)
+   	- 1µL Phusion polymerase **add last minute**
+   	Vortex and spin down.
 
 5. Add 34µL of Phusion MM per standard reaction to each of your PCR tubes.
 
@@ -111,9 +111,9 @@ _Make agarose gel:_
 
 _Prepare samples:_
 
-7. For PCR-assembly products recommend: 1µL sample, 1µL dye, 4µL ddH2O. In general need dye to be ⅙ of total. 
+7. For PCR-assembly products recommend: 1µL sample, 1µL dye, 4µL ddH2O. In general need dyes are 6x so need to be ⅙ of total. 
 
-8. Choose ladder according to size of product (usually 50bp ladder suffices). Ladder is ready-to-go; do not add ddH2O or dye.
+8. Choose ladder according to size of product (usually 50bp ladder suffices). If ladder is ready-to-go; do not add ddH2O or dye.
 
 9. Plan out lanes, note can leave lanes empty. Make sure the ladder(s) reasonable distance to every sample.
 
@@ -192,7 +192,10 @@ _Elute DNA:_
 Note, if you have a epPCR primer site at the end of your construct you will want to remove this before transcribing the RNA for cryo-EM, this requires a digest, another column purification, and checking on the gel to see the size has reduced by the expected amount.
 :::
 
-:::{dropdown} {material-regular}`format_list_numbered` 7. DNA gel purification
+:::{dropdown} {material-regular}`format_list_numbered` 7. *optional* DNA gel purification
+
+If DNA gel reveals multiple bands, you may want to gel purify the DNA of the correct length. Make a 1% agarose gel and load your sample, excise the band of interest and use the Qiagen QiaQuick Gel Extraction Kit to gel-purify the band before IVT.
+
 1. Image the gel under blue light, mark the band with a sharpie (red).
 2. Weigh an empty 1.5 mL microcentrifuge tube.
 3. Use a clean, sharp razor to excise the DNA fragment. Try not to cut excess gel.
@@ -208,7 +211,7 @@ Note, if you have a epPCR primer site at the end of your construct you will want
 13. Spin at 13,000xg for 1 min to remove residual wash buffer.
 14. Move column to a well-labeled 1.5 mL tube. Dry 15 min with an open column.
 15. Add 30 uL ddH2O to the membrane. Wait 10 min. Spin at 10,000 for 1 min. Discard column not flowthrough.
-16. Save DNA in -20C __[dsDNA]__
+16. Save DNA in -20&deg;C __[dsDNA]__
 
 
 
