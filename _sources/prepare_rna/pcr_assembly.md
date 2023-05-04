@@ -2,7 +2,9 @@
 
 
 
-__Goal: Create the dsDNA that will be the template to create your RNA of interest. __
+__Goal__: Create the dsDNA that will be the template to create your RNA of interest. 
+
+__Time__: ~ 4 hours
 
 
 

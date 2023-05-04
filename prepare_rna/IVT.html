@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="RNA anlysis" href="rna_analysis.html" />
+    <link rel="next" title="dPAGE Purification" href="dPAGE.html" />
     <link rel="prev" title="PCR assembly" href="pcr_assembly.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -122,6 +122,11 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="RNAse_free.html">
+   RNase Free Procedures
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="pcr_assembly.html">
    PCR assembly
   </a>
@@ -132,6 +137,11 @@ const thebe_selector_output = ".output, .cell_output"
     in vitro
    </em>
    Transcription (IVT)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dPAGE.html">
+   dPAGE Purification
   </a>
  </li>
  <li class="toctree-l1">
@@ -549,23 +559,6 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#method">
    Method
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#a-ivt-with-transcriptaid">
-     1a. IVT with TranscriptAid
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#b-rna-column-purification">
-     1b. RNA Column Purification
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#c-rna-quantification">
-     1c. RNA Quantification
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -600,23 +593,6 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#method">
    Method
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#a-ivt-with-transcriptaid">
-     1a. IVT with TranscriptAid
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#b-rna-column-purification">
-     1b. RNA Column Purification
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#c-rna-quantification">
-     1c. RNA Quantification
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -630,7 +606,8 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="in-vitro-transcription-ivt">
 <h1><em>in vitro</em> Transcription (IVT)<a class="headerlink" href="#in-vitro-transcription-ivt" title="Permalink to this headline">#</a></h1>
-<p>Goal: Create the RNA of interest from the DNA template.</p>
+<p><strong>Goal</strong>: Create the RNA of interest from the DNA template.</p>
+<p><strong>Time</strong>: ~0.5hrs - 4-overnight wait - ~1.5hrs</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
 <p>T7 polymerase catalyzes the formation of RNA from DNA in the 5’–&gt;3’ direction. It will read the 5’–&gt;3’ strand of our DNA template and use NTPs to create the complementary RNA strand. T7 is extremely specific for its promoter which we inserted at the start of our construct, so most of our product should be the length of our dsDNA we put in minus the promoter region which T7 does not transcribe. We then clean up our IVT reaction using Zymo RCC columns and quantify how much RNA we have at this stage.</p>
@@ -649,59 +626,65 @@ title="Print to PDF"
 </section>
 <section id="method">
 <h2>Method<a class="headerlink" href="#method" title="Permalink to this headline">#</a></h2>
-<section id="a-ivt-with-transcriptaid">
-<h3>1a. IVT with TranscriptAid<a class="headerlink" href="#a-ivt-with-transcriptaid" title="Permalink to this headline">#</a></h3>
-<div class="toggle docutils container">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<svg version="4.0.0.63c5cb3" width="1.0em" height="1.0em" class="sd-material-icon sd-material-icon-format_list_numbered" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M2 17h2v.5H3v1h1v.5H2v1h3v-4H2v1zm1-9h1V4H2v1h1v3zm-1 3h1.8L2 13.1v.9h3v-1H3.2L5 10.9V10H2v1zm5-6v2h14V5H7zm0 14h14v-2H7v2zm0-6h14v-2H7v2z"></path></svg> 1. IVT with TranscriptAid<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <ol class="simple">
-<li><p>You want to aim for 2000ng/reaction, and for cryo-EM often want 3 reactions total. For each reaction you have:</p>
+<li><p class="sd-card-text">You want to aim for 2000ng/reaction, and for cryo-EM often want 3 reactions total. For each reaction you have:</p>
 <ul class="simple">
-<li><p>8µL NTPs (25mM)</p></li>
-<li><p>4µL 5x buffer</p></li>
-<li><p>2000ng DNA or less</p></li>
-<li><p>2µL T7 mix *add last</p></li>
-<li><p>ddH2O to bring to 20µL</p></li>
+<li><p class="sd-card-text">8µL NTPs (25mM)</p></li>
+<li><p class="sd-card-text">4µL 5x buffer</p></li>
+<li><p class="sd-card-text">2000ng DNA or less</p></li>
+<li><p class="sd-card-text">2µL T7 mix *add last</p></li>
+<li><p class="sd-card-text">ddH2O to bring to 20µL</p></li>
 </ul>
 </li>
-<li><p>Incubate at 37°C for minimum 4 hours, especially if you have a mutant promoter do this overnight, if PAGE-purifying it is safe to run all overnight (off-products from running too long are generally a different length). Note down time incubated for.</p></li>
-<li><p>Add 2µL DNase I per reaction. Incubate 15min at 37°C to digest any left over DNA.</p></li>
+<li><p class="sd-card-text">Incubate at 37°C for minimum 4 hours, especially if you have a mutant promoter do this overnight, if PAGE-purifying it is safe to run all overnight (off-products from running too long are generally a different length). Note down time incubated for.</p></li>
+<li><p class="sd-card-text">Add 2µL DNase I per reaction. Incubate 15min at 37°C to digest any left over DNA.</p></li>
 </ol>
 </div>
-</section>
-<section id="b-rna-column-purification">
-<h3>1b. RNA Column Purification<a class="headerlink" href="#b-rna-column-purification" title="Permalink to this headline">#</a></h3>
-<div class="toggle docutils container">
-<ol class="simple">
-<li><p>Move to IVT solution to 1.5mL tube. Add 2xIVT volume binding buffer and 3xIVT volume 100% EtOH to sample and mix well.</p>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<svg version="4.0.0.63c5cb3" width="1.0em" height="1.0em" class="sd-material-icon sd-material-icon-format_list_numbered" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M2 17h2v.5H3v1h1v.5H2v1h3v-4H2v1zm1-9h1V4H2v1h1v3zm-1 3h1.8L2 13.1v.9h3v-1H3.2L5 10.9V10H2v1zm5-6v2h14V5H7zm0 14h14v-2H7v2zm0-6h14v-2H7v2z"></path></svg> 2. RNA Column Purification<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ol>
+<li><p class="sd-card-text">Move to IVT solution to 1.5mL tube. Add 2xIVT volume binding buffer and 3xIVT volume 100% EtOH to sample and mix well.</p>
 <ul class="simple">
-<li><p>Note - for RNAs &lt; 200 nt, add 4.5xIVT volume of 100% ethanol (e.g. for an IVT with a volume of 66 uL, add 132 uL binding buffer and 297 uL 100% EtOH).</p></li>
+<li><p class="sd-card-text">Note - for RNAs &lt; 200 nt, add 4.5xIVT volume of 100% ethanol (e.g. for an IVT with a volume of 66 uL, add 132 uL binding buffer and 297 uL 100% EtOH).</p></li>
 </ul>
 </li>
-<li><p>Add into the zymo RCC column, 700µL at a time. Wait 5min. Spin at 13,000g for 1min. Discard flow-through. Repeat until all the solution is added to the column.</p></li>
-<li><p>Add 400µL of Prep-Buffer to the column. Spin at 13,000g for 1min. Discard flow-through.</p></li>
-<li><p>Add 700µL of Wash Buffer to the column. Spin at 13,000g for 30sec. Discard flow-through.</p></li>
-<li><p>Add 400µL of Wash Buffer to column. Spin at 13,000g for 30sec. Discard flow-through.</p></li>
-<li><p>Spin at 13,000g for 2min.</p></li>
-<li><p><em>Optional:</em> Move column to well labeled 1.5mL tube. Dry 15min with cap open.</p></li>
-<li><p>Add 30µL of ddH2O to elute. Wait 5 min. Spin at 13,000g for 30sec.</p></li>
-<li><p>Immediately in -80°C!</p></li>
+<li><p class="sd-card-text">Add into the zymo RCC column, 700µL at a time. Wait 5min. Spin at 13,000g for 1min. Discard flow-through. Repeat until all the solution is added to the column.</p></li>
+<li><p class="sd-card-text">Add 400µL of Prep-Buffer to the column. Spin at 13,000g for 1min. Discard flow-through.</p></li>
+<li><p class="sd-card-text">Add 700µL of Wash Buffer to the column. Spin at 13,000g for 30sec. Discard flow-through.</p></li>
+<li><p class="sd-card-text">Add 400µL of Wash Buffer to column. Spin at 13,000g for 30sec. Discard flow-through.</p></li>
+<li><p class="sd-card-text">Spin at 13,000g for 2min.</p></li>
+<li><p class="sd-card-text"><em>Optional:</em> Move column to well labeled 1.5mL tube. Dry 15min with cap open.</p></li>
+<li><p class="sd-card-text">Add 30µL of ddH2O to elute. Wait 5 min. Spin at 13,000g for 30sec.</p></li>
+<li><p class="sd-card-text">Immediately in -80°C!</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+:::{dropdown} {material-regular}`format_list_numbered` 3. RNA Quantification
+
+1. Dilute RNA [5x and/or 25x dilution recommended: 2µL ddH2O and 0.5µL sample in PCR tube] If you bring your own pipette to the non-RNAse free nanodrop, wipe it off with RNAse zap before using again.
+2. Wipe down the NanoDrop. Calibrate with 1µL ddH20. Set to RNA. 
+3. Blank and zero with 1µL ddH2O. 
+4. Load 1µL of sample, take measurement.
+5. Check for contaminants. Expect A260/A280~2.1. Do not want a 230 shoulder.  Generally, if A260 above 70 needs to dilute further. 
+6. Write down: A260, A280, and Reported ng/µL. 
+7. Calculate concentration: RNA (μM) = [A260 x 40,000] / [330 x length (bp)]
+
+</pre></div>
+</div>
+</li>
 </ol>
 </div>
-</section>
-<section id="c-rna-quantification">
-<h3>1c. RNA Quantification<a class="headerlink" href="#c-rna-quantification" title="Permalink to this headline">#</a></h3>
-<div class="toggle docutils container">
-<ol class="simple">
-<li><p>Dilute RNA [5x and/or 25x dilution recommended: 2µL ddH2O and 0.5µL sample in PCR tube] If you bring your own pipette to the non-RNAse free nanodrop, wipe it off with RNAse zap before using again.</p></li>
-<li><p>Wipe down the NanoDrop. Calibrate with 1µL ddH20. Set to RNA.</p></li>
-<li><p>Blank and zero with 1µL ddH2O.</p></li>
-<li><p>Load 1µL of sample, take measurement.</p></li>
-<li><p>Check for contaminants. Expect A260/A280~2.1. Do not want a 230 shoulder.  Generally, if A260 above 70 needs to dilute further.</p></li>
-<li><p>Write down: A260, A280, and Reported ng/µL.</p></li>
-<li><p>Calculate concentration: RNA (μM) = [A260 x 40,000] / [330 x length (bp)]</p></li>
-</ol>
-</div>
-</section>
-</section>
+</details></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -738,10 +721,10 @@ title="Print to PDF"
             <p class="prev-next-title">PCR assembly</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="rna_analysis.html" title="next page">
+    <a class='right-next' id="next-link" href="dPAGE.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">RNA anlysis</p>
+        <p class="prev-next-title">dPAGE Purification</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
