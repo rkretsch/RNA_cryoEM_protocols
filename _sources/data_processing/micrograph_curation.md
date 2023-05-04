@@ -1,5 +1,7 @@
 # Micrograph Curation
 
+````{tab-set}
+```{tab-item} Cryosparc Curate Exposures
 
 
 ### Cryosparc
@@ -29,3 +31,5 @@ Now that all micrographs are processed, you can manually reject those with bad i
      ![done_curating_exposures](done_curating_exposures.png) **Figure 3. “Done” in Curate Exposures job.**
 
 3. Finally, use a second “Exposure Tools” job to combine all accepted micrographs into a single set.
+```
+````
