@@ -35,7 +35,7 @@ In order for the grids to be loaded into the microscope, they must be clipped so
     **Figure 1. Tools for clipping grids.**
 
 #### Method
-    
+
 1. First, using a pair of fine-tip tweezers, carefully pick up a c-clip from its center and shove it into the hole at the top of the clipping tool, as shown below. C-clip should be completely below the lip of the hole and at an angle, not perpendicular to the opening. 
 
     ![c_ring_orientation](c_ring_orientation.png)
@@ -55,7 +55,7 @@ In order for the grids to be loaded into the microscope, they must be clipped so
 
     ![clipping_station_with_tools](clipping_station_with_tools.png)
     **Figure 3: Clipping station including tools.**
-    
+
 8. Using the tweezers, transfer an autogrid ring, flat side down, into the loading pedestal open position (shown below). 
 
     ![autogrid_on_pedestal](autogrid_on_pedestal.png)
@@ -70,9 +70,8 @@ In order for the grids to be loaded into the microscope, they must be clipped so
 
     ![clipped_grid](clipped_grid.png)
     **Figure 5: Properly clipped grid.**
-    
+
 13. Repeat steps 8-12 for all your grids. 
 14. Fill a sample transfer dewar with liquid nitrogen and allow it to cool. Use the pen tool to secure the plastic lid on the autogrid box, then quickly transfer it to the sample transfer dewar. Now the grids can be stored in a storage dewar or loaded into a cassette for screening. 
 15. Now that you are done clipping, be sure to clean up. Return buttons and the fine tweezers to their proper storage location where they will defrost. Place the rest of the tools onto the heat block so they can defrost. Place the clipping station in the proper drying area. Place the sample transfer station in the proper drying location. 
-
 

@@ -6,7 +6,9 @@
 
 
 
-**Contact: Rachael Kretsch; rkretsch "at" stanford "dot" edu**
+**Contact: Rachael Kretsch: rkretsch "at" stanford "dot" edu**
+
+**Contact: Grace Nye: gnye8 "at" stanford "dot" edu**
 
 
 

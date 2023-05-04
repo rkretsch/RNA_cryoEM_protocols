@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="ab_initio" href="ab_initio.html" />
+    <link rel="next" title="Ab Initio 3D reconstruction" href="ab_initio.html" />
     <link rel="prev" title="paticle_picking_strategies" href="paticle_picking_strategies.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -131,7 +131,12 @@ const thebe_selector_output = ".output, .cell_output"
    <em>
     in vitro
    </em>
-   transcription (IVT)
+   Transcription (IVT)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../rna_analysis.html">
+   RNA anlysis
   </a>
  </li>
 </ul>
@@ -196,6 +201,11 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="../Live_processing.html">
+     Live Processing
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="cryosparc_live.html">
      cryosparc_live
     </a>
@@ -217,6 +227,11 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Preprocessing.html">
+     Pre-processing
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="motion_correction.html">
      motion_correction
@@ -245,6 +260,16 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="../particle_picking.html">
+     Particle Picking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2D_classification.html">
+     2D Classification
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="blob_picking.html">
      blob_picking
     </a>
@@ -261,7 +286,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="2D_classification.html">
-     2D_classification
+     2D Classification
     </a>
    </li>
    <li class="toctree-l2">
@@ -283,12 +308,12 @@ const thebe_selector_output = ".output, .cell_output"
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="ab_initio.html">
-     ab_initio
+     Ab Initio 3D reconstruction
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="3D_classification.html">
-     3D_classification
+     3D Classification
     </a>
    </li>
    <li class="toctree-l2">
@@ -510,12 +535,48 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#potential-problems">
+   Potential problems
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mask-artifacts">
+     Mask artifacts
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cryosparc-non-uniform-refinement">
+     Cryosparc Non-Uniform Refinement
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -527,6 +588,31 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#potential-problems">
+   Potential problems
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mask-artifacts">
+     Mask artifacts
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cryosparc-non-uniform-refinement">
+     Cryosparc Non-Uniform Refinement
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -536,6 +622,19 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="d-reconstruction">
 <h1>3D reconstruction<a class="headerlink" href="#d-reconstruction" title="Permalink to this headline">#</a></h1>
+<section id="potential-problems">
+<h2>Potential problems<a class="headerlink" href="#potential-problems" title="Permalink to this headline">#</a></h2>
+<section id="mask-artifacts">
+<h3>Mask artifacts<a class="headerlink" href="#mask-artifacts" title="Permalink to this headline">#</a></h3>
+<p>If you see an FSC curve with jumps such as this:</p>
+<p><img alt="fsc_mask_artifact" src="../_images/fsc_mask_artifact.png" /></p>
+<p>Then it is possible that there are issues with the mask size fitting too tightly, in which case it is recommended to try to increase the mask size. To do this, change the following parameters:</p>
+</section>
+<section id="cryosparc-non-uniform-refinement">
+<h3>Cryosparc Non-Uniform Refinement<a class="headerlink" href="#cryosparc-non-uniform-refinement" title="Permalink to this headline">#</a></h3>
+<p>After performing Ab Initio and any additional necessary refinement jobs, you should then perform non-uniform refinement on your final particle stack and volume in order to obtain a high resolution final model with a gold standard resolution estimate in Angstroms and an FSC curve. This job we typically run with default parameters, although it is best to evaluate the FSC curve after the job has been completed.</p>
+</section>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -577,7 +676,7 @@ title="Print to PDF"
     <a class='right-next' id="next-link" href="ab_initio.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">ab_initio</p>
+        <p class="prev-next-title">Ab Initio 3D reconstruction</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

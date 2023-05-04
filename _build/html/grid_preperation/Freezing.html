@@ -1,0 +1,859 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Freezing &#8212; RNA cryoEM protocols</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/myadmonitions.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Clipping" href="Clipping.html" />
+    <link rel="prev" title="Folding" href="Folding.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/RNA_cryoEM_logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">RNA cryoEM protocols</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    RNA CryoEM Protocols
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Preparing small RNA samples
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../pcr_assembly.html">
+   PCR assembly
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../IVT.html">
+   <em>
+    in vitro
+   </em>
+   Transcription (IVT)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../rna_analysis.html">
+   RNA anlysis
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Grid preperation
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Folding.html">
+   Folding
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Freezing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Clipping.html">
+   Clipping
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Screening and data collection
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../scope/Loading.html">
+   Loading
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../scope/Screening.html">
+   Screening
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../scope/Alignment.html">
+   Alignmnet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../scope/Data_collection.html">
+   Data Collection
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Data processing
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../data_processing/Live_processing.html">
+   Live Processing
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Live_processing.html">
+     Live Processing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../data_processing/cryosparc_live.html">
+     cryosparc_live
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../data_processing/S2C2_pipeline.html">
+     S2C2_pipeline
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../data_processing/Pre_processing.html">
+   Pre-processing
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Preprocessing.html">
+     Pre-processing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../data_processing/motion_correction.html">
+     motion_correction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../data_processing/ctf_estimation.html">
+     ctf_estimation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../data_processing/micrograph_curation.html">
+     micrograph_curation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../data_processing/Particle_picking.html">
+   Particle picking
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../particle_picking.html">
+     Particle Picking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../data_processing/blob_picking.html">
+     blob_picking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../data_processing/template_picking.html">
+     template_picking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../data_processing/deep_picking.html">
+     deep picking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../data_processing/2D_classification.html">
+     2D Classification
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../data_processing/paticle_picking_strategies.html">
+     paticle_picking_strategies
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../data_processing/3D_reconstruction.html">
+   3D reconstruction
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../data_processing/ab_initio.html">
+     Ab Initio 3D reconstruction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../data_processing/3D_classification.html">
+     3D Classification
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../data_processing/3D_refine.html">
+     3D_refine
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../data_processing/sharpening.html">
+     sharpening.md
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../data_processing/3D_reconstruction_strategies.html">
+     3D_reconstruction_strategies
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../data_processing/Software.html">
+   Software
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../data_processing/acquire_sdf.html">
+     acquire_sdf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../data_processing/relion.html">
+     relion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../data_processing/cryosparc.html">
+     cryosparc
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../data_processing/transfer_relion_cryosparc.html">
+     transfer_relion_cryosparc
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../data_processing/cryoDRGN.html">
+     cryoDRGN
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../data_processing/topaz.html">
+     topaz
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../data_processing/cryolo.html">
+     cryolo
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/rkretsch/RNA_cryoEM_protocols"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/rkretsch/RNA_cryoEM_protocols/issues/new?title=Issue%20on%20page%20%2Fgrid_preperation/Freezing.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/grid_preperation/Freezing.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goal">
+   Goal
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#protocols-resources">
+   Protocols/Resources
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#materials">
+   Materials
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#method">
+   Method
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Freezing</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goal">
+   Goal
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#protocols-resources">
+   Protocols/Resources
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#materials">
+   Materials
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#method">
+   Method
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="freezing">
+<h1>Freezing<a class="headerlink" href="#freezing" title="Permalink to this headline">#</a></h1>
+<section id="goal">
+<h2>Goal<a class="headerlink" href="#goal" title="Permalink to this headline">#</a></h2>
+<p><em>[folded RNA -&gt; frozen grid]</em></p>
+<p>Once we have folded RNA we want to put it on the grid and freeze it as quickly as possible.</p>
+</section>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<p>We want to create a thin layer of ice with RNA in random orientations but in an even distribution throughout. We accomplish this through first plasma cleaning the grid, applying the sample to the grid and blotting away liquid to create a thin film, then plunge freezing the grid into liquid ethane to vitrify the ice. Generally, optimizing the conditions of grids is still a trial and error process with variables such as the time and amount of cleaning, the length and amount of blotting, and the grid type, which can be varied. With RNA there is generally not a preferred orientation problem.</p>
+</section>
+<section id="protocols-resources">
+<h2>Protocols/Resources<a class="headerlink" href="#protocols-resources" title="Permalink to this headline">#</a></h2>
+<p><a class="reference external" href="https://docs.google.com/spreadsheets/d/1LdVuB27zxUWZSrtuxye2XQu5pgyFG9FFp4FtjlcBbZo/edit#gid=892379557">Excel quick link</a></p>
+<p><a class="reference external" href="http://www.cryoemcenters.org/merit-badge/tfs-vitrobot-mark-iv/">Base Knowledge and SOP</a></p>
+<p><a class="reference external" href="http://www.cryoemcenters.org/merit-badge/tfs-vitrobot-mark-iv/">Video Series</a></p>
+<p><a class="reference external" href="https://drive.google.com/file/d/1La8oMP-3LwFKTZCNo2YovGavny6JLMma/view">S2C2 tutoral video</a></p>
+</section>
+<section id="materials">
+<h2>Materials<a class="headerlink" href="#materials" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Grids (Quantifoil, R=1.2/1.3, Cu 300)</p></li>
+<li><p>Vitrobot tweezers</p></li>
+<li><p>Liquid nitrogen holder</p></li>
+<li><p>Contamination ring</p></li>
+<li><p>Brass cup</p></li>
+<li><p>Grid box holder</p></li>
+<li><p>Spider</p></li>
+<li><p>Filter papers (prepunched Whatman #540)</p></li>
+<li><p>Membranes (ACLAR 33)</p></li>
+<li><p>Gridboxes</p></li>
+<li><p>Fine-tipped tweezers</p></li>
+<li><p>Autogrid tweezers</p></li>
+<li><p>Sample transfer dewar</p></li>
+<li><p>Screw pen (for gridbox caps)</p></li>
+<li><p>Larger tweezers of choice</p></li>
+<li><p>p10 or p20 pipette with correct tips</p></li>
+<li><p>Folded sample</p></li>
+<li><p>Dewar</p></li>
+</ul>
+</section>
+<section id="method">
+<h2>Method<a class="headerlink" href="#method" title="Permalink to this headline">#</a></h2>
+<ol>
+<li><p>Prepare the vitrobot by turning on the machine by flipping the switch on the back right of the machine.</p>
+<p><img alt="vitrobot_markIV" src="../_images/Vitrobot_markIV.png" /></p>
+<p><strong>Figure 1. Vitrobot Mark IV machine. A) Screen. B) Chamber with blotting pads. C) Humidifier. D) Ethane lift.</strong></p>
+</li>
+<li><p>Using vitrobot pen, set parameters on the vitrobot. Set desired humidity and temperature settings, and turn the humidifier on. If the humidifier says it is empty, add 60mL of distilled water. Go to the options tab and set other parameters. Some suggested starting parameters can be found in Table 1.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Parameter</p></th>
+<th class="text-align:center head"><p>Suggested</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>Humidity</p></td>
+<td class="text-align:center"><p>100%</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Temperature</p></td>
+<td class="text-align:center"><p>4°C</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>Blot Time (s)</p></td>
+<td class="text-align:center"><p>4</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Wait Time (s)</p></td>
+<td class="text-align:center"><p>0 secs</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>Blot Force</p></td>
+<td class="text-align:center"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Blot Number</p></td>
+<td class="text-align:center"><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>Use Footpedal</p></td>
+<td class="text-align:center"><p>Yes</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Humidifier Off During Process</p></td>
+<td class="text-align:center"><p>Yes</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>Skip Grid Transfer</p></td>
+<td class="text-align:center"><p>Yes</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><strong>Table 1. Suggested starting parameters for Vitrobot freezing of RNA samples.</strong></p></td>
+<td class="text-align:center"><p></p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>Fill a dewar with liquid nitrogen.</p></li>
+<li><p>Glow discharge your grids. Carefully use your fine-tipped tweezers to remove the desired number of grids from their container and lay them flat on the glow discharge holder, copper side up, for glow discharging.</p></li>
+<li><p>Carry your grids to the glow discharger and set them in the pedestal. Suggested starting parameters for glow discharging are shown in Table 2 below.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Parameter</p></th>
+<th class="text-align:center head"><p>Suggested</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>Current (mA)</p></td>
+<td class="text-align:center"><p>15</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Glow Discharge Time (s)</p></td>
+<td class="text-align:center"><p>30</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>Wait Time (s)</p></td>
+<td class="text-align:center"><p>10</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>Gas</p></td>
+<td class="text-align:center"><p>1 (air)</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><strong>Table 2. Suggested starting parameters for glow discharging grids.</strong></p></td>
+<td class="text-align:center"><p></p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>Attach filter papers to the vitrobot. Membranes are placed under the filter papers to prevent lipids and other particles on the vitrobot from contaminating your samples.</p></li>
+<li><p>Test that the vitrobot is set up correctly by using the foot pedal to run through the cycle once, checking that the blot pads are centered.</p></li>
+<li><p>You will now assemble the ethane holder to cool down your ethane for plunge freezing. Place the brass ethane cup, grid box holder, spider, and anti-contamination ring in the LN2 (liquid nitrogen) container. Additionally, you can place the grid button in the grid button holder and use the screwdriver to loosen the cap before cooling begins.</p>
+<p><img alt="freezing_apparatus" src="../_images/freezing_apparatus.png" /></p>
+<p><strong>Figure 2. Freezing apparatus. A) Spider. B) Brass cup. C) Button holder. D) Liquid nitrogen container. E) Contamination ring.</strong></p>
+<p><img alt="freezing_apparatus_assembled" src="../_images/freezing_apparatus_assembled.png" /></p>
+<p><strong>Figure 3. Freezing apparatus assembled, including button.</strong></p>
+</li>
+<li><p>Fill the apparatus with liquid nitrogen and continue to refill as liquid nitrogen evaporates until the metal has reached the same temperature as the liquid nitrogen (will hear a hissing and a heavy boiling).</p></li>
+<li><p>Attach the ethane dispenser to the spider (shown below), open the main ethane line, and very slowly and carefully, twist open the ethane dispenser to fill the brass cup with liquid ethane. When the ethane has filled the brass cup, close the ethane dispenser, and lift it off the brass cup.
+*Tips for this step: open the ethane dispenser until you can see liquid and bubbles forming around the tips of the plastic. Stop opening and wait for a while until you see some liquid drops forming at the mouth of the opening. If you open too far, you will see a plume of white gas entering the brass cup. In this case, close the dispenser using very small movements until the plume of gas has lessened. The brass cup must cool down enough so that the ethane gas will condense into liquid at the bottom of the cup, so you may have to wait a moment for the gas to clear and liquid to begin forming visibly at the bottom of the cup.</p>
+<p><img alt="ethane_dispenser" src="../_images/ethane_dispenser.png" /></p>
+<p><strong>Figure 4. Ethane dispenser attached to spider.</strong></p>
+</li>
+<li><p>Cool down the liquid ethane using the spider. When the first crystals have formed in the liquid ethane along the walls of the brass cup, it is the correct temperature for freezing. Quickly remove the spider so as to avoid freezing the ethane solid. If the ethane is frozen solid, it can be warmed up by placing the spider upside down on the brass cup or by using a warm tool to carefully melt the ethane along the walls of the brass cup.</p></li>
+<li><p>Now you will collect your samples and begin plunge freezing. Using a pair of autoloader tweezers, move the plastic cap of the gridbox so that the opening is over the correct slot in the gridbox. Take the vitrobot tweezers (shown below) and carefully pick up a single grid, keeping it as centered as possible and as close to the tip as possible, with the grid orientation as shown below. Fasten the grid in place by sliding the grip down the tweezers to hold it together, only slide to the first knotch.</p>
+<p><img alt="tweezer_orientation" src="../_images/tweezer_orientation.png" /></p>
+<p><strong>Figure 5. Vitrobot tweezers, shown with orientation of grids. Carbon side should be facing the same direction as the side of tweezers with small red dot on the handle.</strong></p>
+</li>
+<li><p>Fasten the tweezers to the vitrobot as shown below. Ensure that the carbon side of the grid is facing the direction in which sample will be applied (if you are right-handed, the carbon should be facing to the right).</p></li>
+<li><p>Depress the foot pedal to raise the tweezers with the grid into the environmental chamber. Place the liquid nitrogen container with the cold liquid ethane onto the ethane lift and depress the pedal again to raise the ethane.</p></li>
+<li><p>Depress the foot pedal to lower the tweezers so that you can load your sample. Open the side of the vitrobot and pipette 3 uL of your sample through the opening onto the carbon side of your grid. Quickly push the footpedal again, which causes the vitrobot to blot the sample and then plunge it into the liquid ethane. The ethane lift will lower so that you can access the sample.</p>
+<p><img alt="pipetting_sample" src="../_images/pipetting_sample.png" /></p>
+<p><strong>Figure 6. Pipetting sample onto grids in the vitrobot.</strong></p>
+</li>
+<li><p>The next few steps must be performed as quickly and carefully as possible, being sure to avoid raising the grid into the air or smashing it. Carefully detach the tweezers from the vitrobot, being sure to keep the grid suspended in the liquid ethane.</p></li>
+<li><p>If desired, remove the liquid nitrogen container from the vitrobot stand and set to the side. This allows for an easier transfer of the grid to the gridbox. Be sure to keep the grid submerged in liquid ethane the whole time.</p></li>
+<li><p>Holding the tweezers closed with one hand, raise the grip so that the tweezers can be opened again. Be sure to not prematurely open the tweezers and lose the grid.</p></li>
+<li><p>Still keeping the tweezers closed, quickly move the grid from the liquid ethane into the liquid nitrogen. Then, drop the grid into its correct slot in the gridbox.</p></li>
+<li><p>Using autoloader tweezers, move the cap of the gridbox so that the opening is positioned over the next slot and repeat steps 12-19. It is recommended to prepare about 3 grids of each sample and concentration.
+When all grids and samples have been frozen, use the screw tool to fasten the lid of the gridbox.</p></li>
+<li><p>Fill a sample transfer dewar with liquid nitrogen and allow it to cool down. Quickly transfer the gridbox into the transfer dewar and close the lid.</p></li>
+<li><p>Now that you are done freezing, you will clean up. Make sure to remove dirty filter papers from the vitrobot, and tap “Exit” to power down the machine. Once the screen darkens, you can flip the switch on the back right of the machine. Set the liquid nitrogen apparatus in the proper drying area and ensure that the main line to the ethane has been closed.</p></li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./grid_preperation"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="Folding.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Folding</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Clipping.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Clipping</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Rachael Kretsch<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

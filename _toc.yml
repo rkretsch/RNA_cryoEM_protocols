@@ -6,39 +6,34 @@ root: intro
 parts:
   - caption: Preparing small RNA samples
     chapters: 
-    - file: pcr_assembly
-    - file: IVT
-    - file: rna_analysis
+    - file: prepare_rna/pcr_assembly
+    - file: prepare_rna/IVT
+    - file: prepare_rna/rna_analysis
   - caption: Grid preperation
     chapters:
-    - file: Folding
-    - file: Freezing
-    - file: Clipping
+    - file: grid_preperation/Folding
+    - file: grid_preperation/Freezing
+    - file: grid_preperation/Clipping
   - caption: Screening and data collection
     chapters:
-    - file: Screening
-    - file: Alignment
-    - file: Data_collection
+    - file: scope/Loading
+    - file: scope/Screening
+    - file: scope/Alignment
+    - file: scope/Data_collection
   - caption: Data processing
     chapters:
     - file: data_processing/Live_processing
-      sections:
-      - file: Live_processing
-      - file: data_processing/cryosparc_live
-      - file: data_processing/S2C2_pipeline
     - file: data_processing/Pre_processing
       sections:
-      - file: Preprocessing
+      - file: data_processing/import_movies
       - file: data_processing/motion_correction
       - file: data_processing/ctf_estimation
       - file: data_processing/micrograph_curation
     - file: data_processing/Particle_picking
       sections:
-      - file: particle_picking
-      - file: 2D_classification
-      - file: data_processing/blob_picking
-      - file: data_processing/template_picking
+      - file: data_processing/blob_template_picking
       - file: data_processing/deep_picking
+      - file: data_processing/extract_particles
       - file: data_processing/2D_classification
       - file: data_processing/paticle_picking_strategies
     - file: data_processing/3D_reconstruction
@@ -51,6 +46,7 @@ parts:
     - file: data_processing/Software
       sections:
       - file: data_processing/acquire_sdf
+      - file: data_processing/workstations_getting_started
       - file: data_processing/relion
       - file: data_processing/cryosparc
       - file: data_processing/transfer_relion_cryosparc

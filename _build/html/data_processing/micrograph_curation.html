@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>micrograph_curation &#8212; RNA cryoEM protocols</title>
+    <title>Micrograph Curation &#8212; RNA cryoEM protocols</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -55,7 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Particle picking" href="Particle_picking.html" />
-    <link rel="prev" title="ctf_estimation" href="ctf_estimation.html" />
+    <link rel="prev" title="CTF Estimation" href="ctf_estimation.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -122,16 +122,21 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../pcr_assembly.html">
+  <a class="reference internal" href="../prepare_rna/pcr_assembly.html">
    PCR assembly
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../IVT.html">
+  <a class="reference internal" href="../prepare_rna/IVT.html">
    <em>
     in vitro
    </em>
-   transcription (IVT)
+   Transcription (IVT)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../prepare_rna/rna_analysis.html">
+   RNA anlysis
   </a>
  </li>
 </ul>
@@ -142,17 +147,17 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../Folding.html">
+  <a class="reference internal" href="../grid_preperation/Folding.html">
    Folding
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../Freezing.html">
+  <a class="reference internal" href="../grid_preperation/Freezing.html">
    Freezing
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../Clipping.html">
+  <a class="reference internal" href="../grid_preperation/Clipping.html">
    Clipping
   </a>
  </li>
@@ -164,17 +169,22 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../Screening.html">
+  <a class="reference internal" href="../scope/Loading.html">
+   Loading
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../scope/Screening.html">
    Screening
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../Alignment.html">
+  <a class="reference internal" href="../scope/Alignment.html">
    Alignmnet
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../Data_collection.html">
+  <a class="reference internal" href="../scope/Data_collection.html">
    Data Collection
   </a>
  </li>
@@ -185,51 +195,39 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1">
   <a class="reference internal" href="Live_processing.html">
    Live Processing
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="cryosparc_live.html">
-     cryosparc_live
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="S2C2_pipeline.html">
-     S2C2_pipeline
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="Pre_processing.html">
    Pre-processing
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul class="current">
    <li class="toctree-l2">
+    <a class="reference internal" href="Preprocessing.html">
+     Pre-processing
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="motion_correction.html">
-     motion_correction
+     Motion Correction
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="ctf_estimation.html">
-     ctf_estimation
+     CTF Estimation
     </a>
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     micrograph_curation
+     Micrograph Curation
     </a>
    </li>
   </ul>
@@ -238,12 +236,17 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="Particle_picking.html">
    Particle picking
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../particle_picking.html">
+     Particle Picking
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="blob_picking.html">
      blob_picking
@@ -261,7 +264,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="2D_classification.html">
-     2D_classification
+     2D Classification
     </a>
    </li>
    <li class="toctree-l2">
@@ -275,20 +278,20 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="3D_reconstruction.html">
    3D reconstruction
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="ab_initio.html">
-     ab_initio
+     Ab Initio 3D reconstruction
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="3D_classification.html">
-     3D_classification
+     3D Classification
     </a>
    </li>
    <li class="toctree-l2">
@@ -312,8 +315,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="Software.html">
    Software
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -321,6 +324,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="acquire_sdf.html">
      acquire_sdf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="workstations_getting_started.html">
+     Getting started on Das Lab Workstations
     </a>
    </li>
    <li class="toctree-l2">
@@ -510,23 +518,60 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cryosparc">
+   Cryosparc
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>micrograph_curation</h1>
+                <h1>Micrograph Curation</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cryosparc">
+   Cryosparc
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -535,7 +580,31 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="micrograph-curation">
-<h1>micrograph_curation<a class="headerlink" href="#micrograph-curation" title="Permalink to this headline">#</a></h1>
+<h1>Micrograph Curation<a class="headerlink" href="#micrograph-curation" title="Permalink to this headline">#</a></h1>
+<section id="cryosparc">
+<h2>Cryosparc<a class="headerlink" href="#cryosparc" title="Permalink to this headline">#</a></h2>
+<p>Now that all micrographs are processed, you can manually reject those with bad ice or CTF correction.</p>
+<ol>
+<li><p>First, using the job “Exposure Tools”, split micrographs into groups of about 1000.</p></li>
+<li><p>Use the job “Curate Exposures” to manually look through each set of a thousand and find micrographs that are unusable.</p>
+<ul>
+<li><p>Check “Accept All” to accept all micrographs within the set.</p>
+<p><img alt="accept_all_exposures" src="../_images/accept_all_exposures.png" /> <strong>Figure 1. “Accept all” in Curate Exposures job.</strong></p>
+</li>
+<li><p>Click the header of each column (e.g. “CTF Fit”) to show all micrographs arranged in order of that value.</p></li>
+<li><p>Click through micrographs to find the threshold within each parameter in which the micrographs appear usable.</p></li>
+<li><p>Click “Overview” and scroll down to the desired parameter.</p></li>
+<li><p>Use the sliding bars to select those micrographs which fall outside the given threshold of usability, and check “Reject Selection”.</p>
+<p><img alt="reject_exposures" src="../_images/reject_exposures.png" /> <strong>Figure 2. “Reject selection” on Curate Exposures job.</strong></p>
+</li>
+<li><p>When satisfied with all remaining micrographs, check “Done”. This will output the accepted exposures.</p>
+<p><img alt="done_curating_exposures" src="../_images/done_curating_exposures.png" /> <strong>Figure 3. “Done” in Curate Exposures job.</strong></p>
+</li>
+</ul>
+</li>
+<li><p>Finally, use a second “Exposure Tools” job to combine all accepted micrographs into a single set.</p></li>
+</ol>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -569,7 +638,7 @@ title="Print to PDF"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">ctf_estimation</p>
+            <p class="prev-next-title">CTF Estimation</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="Particle_picking.html" title="next page">
