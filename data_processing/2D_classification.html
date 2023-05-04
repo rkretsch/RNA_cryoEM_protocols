@@ -513,53 +513,12 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tips">
-   Tips
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#selecting-2d-classes">
-     Selecting 2D classes
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#cryosparc">
-     Cryosparc
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
@@ -571,36 +530,6 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tips">
-   Tips
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#selecting-2d-classes">
-     Selecting 2D classes
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#cryosparc">
-     Cryosparc
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -611,18 +540,18 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="d-classification">
 <h1>2D Classification<a class="headerlink" href="#d-classification" title="Permalink to this headline">#</a></h1>
 <p><strong>Goal</strong>: to classify particles into groups representing various two dimensional views of the entire molecule.</p>
-<section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
 <p>Once you have a stack of particles representing your molecule, you can classify each of those views into a 2D orientation of that molecule. Since there are thousands of particles suspended in the ice in different orientations, each particle must be classified with other particles that resemble it, so we have groups of particles in separate orientations.</p>
-</section>
-<section id="tips">
-<h2>Tips<a class="headerlink" href="#tips" title="Permalink to this headline">#</a></h2>
-<section id="selecting-2d-classes">
-<h3>Selecting 2D classes<a class="headerlink" href="#selecting-2d-classes" title="Permalink to this headline">#</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<div class="admonition-selecting-2d-classes admonition">
+<p class="admonition-title">Selecting 2D classes</p>
 <p>Parameters used to consider whether or not to select a class include: the clarity/resolution of the class, the number of particles in the class, if the full particle is visible. Additionally, try to select classes which represent all orientations. For RNA reconstruction, it is best to keep all particles that resemble RNA molecules at this stage. The goal is to strike a balance between keeping particle numbers high while removing “junk” or noise.</p>
-</section>
-<section id="cryosparc">
-<h3>Cryosparc<a class="headerlink" href="#cryosparc" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="e7aae340-313c-4a90-bb12-c04fc16e4ef6" name="9e53aefd-bb9b-4420-891e-492bb2844325" type="radio">
+</input><label class="sd-tab-label" for="e7aae340-313c-4a90-bb12-c04fc16e4ef6">
+Cryosparc</label><div class="sd-tab-content docutils">
 <p>Create a “<strong>2D Class”</strong> job. The inputs for this job are the particles which have been extracted from a micrograph using the “Extract from Micrographs” job.</p>
 <p>The following parameters are helpful to modify for this job:</p>
 <ul class="simple">
@@ -668,8 +597,8 @@ title="Print to PDF"
 </ul>
 <p>​	Again, might need to run a few rounds of this job trying out different parameters (esp diameter size) in order to determine optimal values.</p>
 <p>​	Finally, create the “<strong>Select 2D classes”</strong> job in order to interactively view the 2D classes created from the previous job.</p>
-</section>
-</section>
+</div>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
