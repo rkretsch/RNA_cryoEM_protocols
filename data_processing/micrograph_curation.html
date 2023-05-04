@@ -513,36 +513,12 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#cryosparc">
-   Cryosparc
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
@@ -554,19 +530,6 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#cryosparc">
-   Cryosparc
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -576,8 +539,10 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="micrograph-curation">
 <h1>Micrograph Curation<a class="headerlink" href="#micrograph-curation" title="Permalink to this headline">#</a></h1>
-<section id="cryosparc">
-<h2>Cryosparc<a class="headerlink" href="#cryosparc" title="Permalink to this headline">#</a></h2>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="808a8275-57fb-44ab-addc-2b4f8e0f7a86" name="0079e16e-0cf4-42a5-a2da-31a529c94d2a" type="radio">
+</input><label class="sd-tab-label" for="808a8275-57fb-44ab-addc-2b4f8e0f7a86">
+Cryosparc Curate Exposures</label><div class="sd-tab-content docutils">
 <p>Now that all micrographs are processed, you can manually reject those with bad ice or CTF correction.</p>
 <ol>
 <li><p>First, using the job “Exposure Tools”, split micrographs into groups of about 1000.</p></li>
@@ -599,11 +564,6 @@ title="Print to PDF"
 </li>
 <li><p>Finally, use a second “Exposure Tools” job to combine all accepted micrographs into a single set.</p></li>
 </ol>
-</section>
-<div class="sd-tab-set docutils">
-<input checked="checked" id="2ddd42a5-0403-4cac-b527-baf4fd933318" name="de0b32ed-8ad0-4e91-9801-0f8f6ba29af8" type="radio">
-</input><label class="sd-tab-label" for="2ddd42a5-0403-4cac-b527-baf4fd933318">
-Cryosparc Curate Exposures</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </section>

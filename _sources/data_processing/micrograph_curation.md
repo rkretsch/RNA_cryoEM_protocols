@@ -3,9 +3,6 @@
 ````{tab-set}
 ```{tab-item} Cryosparc Curate Exposures
 
-
-### Cryosparc
-
 Now that all micrographs are processed, you can manually reject those with bad ice or CTF correction.
 
 1. First, using the job “Exposure Tools”, split micrographs into groups of about 1000.

@@ -16,8 +16,6 @@ TODO
 ```
 ```{tab-item} Cryosparc Live
 
-#### Method
-
 1. Before you can begin processing live, you must start a new project in regular cryosparc. Open your regular cryosparc desktop (localhost:39100, localhost:39200, etc.) and click the icon to the left of the projects tab at the top (shown in Figure 1). This will open a screen which should show all current projects. 
 
     ![projects](projects.png)
