@@ -80,19 +80,22 @@ If the assembly fails, first try another polymerase.
 
 5. Add 34µL of Phusion MM per standard reaction to each of your PCR tubes.
 
-6. Vortex and spin down. Immediately place in thermocycler
+6. Vortex and spin down. Immediately place in thermocycler.
 
-    :::
+
+:::
 
 :::{dropdown} {material-regular}`format_list_numbered` 3. PCR cycles
 
 Set the following program on thermocycler (likely saved)
-98&deg;C 30sec
-35x[98&deg;C 10sec
-    64&deg;C 30sec *(check annealing temp of oligos, can go a few* *°C above min Tm)*
-    72&deg;C 30sec] *(may need to extend if longer construct, 15-30 per kb)*
-72&deg;C 10min
-12&deg;C inf
+
+- 98&deg;C 30sec
+- 35x
+  - [98&deg;C 10sec
+  - 64&deg;C 30sec *(check annealing temp of oligos, can go a few* *°C above min Tm)*
+  - 72&deg;C 30sec] *(may need to extend if longer construct, 15-30 per kb)*
+- 72&deg;C 10min
+- 12&deg;C inf
 
 :::
 

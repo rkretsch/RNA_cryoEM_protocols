@@ -8,7 +8,7 @@ __Time__: ~0.5hrs - 4-overnight wait - ~1.5hrs
 
 T7 polymerase catalyzes the formation of RNA from DNA in the 5’-->3’ direction. It will read the 5’-->3’ strand of our DNA template and use NTPs to create the complementary RNA strand. T7 is extremely specific for its promoter which we inserted at the start of our construct, so most of our product should be the length of our dsDNA we put in minus the promoter region which T7 does not transcribe. We then clean up our IVT reaction using Zymo RCC columns and quantify how much RNA we have at this stage.
 
-#### Materials:
+:::{dropdown} {material-regular}`list` Materials: 
 
 - [dsDNA]
 - Heat blocks
@@ -17,6 +17,8 @@ T7 polymerase catalyzes the formation of RNA from DNA in the 5’-->3’ directi
 - ddH2O
 - NanoDrop
 - 100% EtOH
+
+:::
 
 ### Method
 
