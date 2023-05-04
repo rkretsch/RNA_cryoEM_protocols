@@ -70,26 +70,31 @@ If the assembly fails, first try another polymerase.
 2. Each standard reaction is 50µL, recommend 4 standard reactions per assembly. Label PCR tubes for each assembly. *Recognize the capacity of your thermocycler, if it is 100µL and you want 4 standard reactions per assembly, each assembly will need to be done in 2 PCR tubes (100µL each, 200µL total).*
 
 3. For each assembly add 16µL of [**primer MM**] per standard reaction (eg 64µL for 4 standard reactions) directly to the PCR tubes.
+
 4. Make a Phusion MM for 1.1x the number of reactions you need (number of assemblies x number of standard reactions per assembly). Per reaction you need:
    	22µL ddH2O
    	10µL HF-buffer
    	1µL dNTPs (10mM)
    	1µL Phusion polymerase **add last minute**
    Vortex and spin down.
+
 5. Add 34µL of Phusion MM per standard reaction to each of your PCR tubes.
+
 6. Vortex and spin down. Immediately place in thermocycler
+
     :::
 
 :::{dropdown} {material-regular}`format_list_numbered` 3. PCR cycles
 
-1. Set the following program on thermocycler (likely saved)
-   98oC 30sec
-   35x[98oC 10sec
-       64oC 30sec *(check annealing temp of oligos, can go a few* *°C above min Tm)*
-       72oC 30sec] *(may need to extend if longer construct, 15-30 per kb)*
-   72oC 10min
-   12oC inf
-   :::
+Set the following program on thermocycler (likely saved)
+98&deg;C 30sec
+35x[98&deg;C 10sec
+    64&deg;C 30sec *(check annealing temp of oligos, can go a few* *°C above min Tm)*
+    72&deg;C 30sec] *(may need to extend if longer construct, 15-30 per kb)*
+72&deg;C 10min
+12&deg;C inf
+
+:::
 
 :::{dropdown} {material-regular}`format_list_numbered`  4a. Agarose gel
 _Make agarose gel:_
@@ -166,7 +171,7 @@ _Remove residual ethanol:_
 
 _Elute DNA:_
 7. Add 30µL ddH2O directly to the membrane. Wait 10min. Spin at 10,000 for 1min. Discard column not flowthrough. 
-8. Save DNA in -20oC. [dsDNA]
+8. Save DNA in -20&deg;C. [dsDNA]
 
 ::::
 
