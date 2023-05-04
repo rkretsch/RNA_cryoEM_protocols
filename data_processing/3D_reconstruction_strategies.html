@@ -122,12 +122,12 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../pcr_assembly.html">
+  <a class="reference internal" href="../prepare_rna/pcr_assembly.html">
    PCR assembly
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../IVT.html">
+  <a class="reference internal" href="../prepare_rna/IVT.html">
    <em>
     in vitro
    </em>
@@ -135,7 +135,7 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../rna_analysis.html">
+  <a class="reference internal" href="../prepare_rna/rna_analysis.html">
    RNA anlysis
   </a>
  </li>
@@ -147,17 +147,17 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../Folding.html">
+  <a class="reference internal" href="../grid_preperation/Folding.html">
    Folding
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../Freezing.html">
+  <a class="reference internal" href="../grid_preperation/Freezing.html">
    Freezing
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../Clipping.html">
+  <a class="reference internal" href="../grid_preperation/Clipping.html">
    Clipping
   </a>
  </li>
@@ -169,17 +169,22 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../Screening.html">
+  <a class="reference internal" href="../scope/Loading.html">
+   Loading
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../scope/Screening.html">
    Screening
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../Alignment.html">
+  <a class="reference internal" href="../scope/Alignment.html">
    Alignmnet
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../Data_collection.html">
+  <a class="reference internal" href="../scope/Data_collection.html">
    Data Collection
   </a>
  </li>
@@ -190,9 +195,14 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1">
   <a class="reference internal" href="Live_processing.html">
    Live Processing
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="Pre_processing.html">
+   Pre-processing
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -201,25 +211,30 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../Live_processing.html">
-     Live Processing
+    <a class="reference internal" href="import_movies.html">
+     Import Movies
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="cryosparc_live.html">
-     cryosparc_live
+    <a class="reference internal" href="motion_correction.html">
+     Motion Correction
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="S2C2_pipeline.html">
-     S2C2_pipeline
+    <a class="reference internal" href="ctf_estimation.html">
+     CTF Estimation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="micrograph_curation.html">
+     Micrograph Curation
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="Pre_processing.html">
-   Pre-processing
+  <a class="reference internal" href="Particle_picking.html">
+   Particle selection (2D)
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -228,55 +243,8 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../Preprocessing.html">
-     Pre-processing
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="motion_correction.html">
-     motion_correction
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ctf_estimation.html">
-     ctf_estimation
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="micrograph_curation.html">
-     micrograph_curation
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="Particle_picking.html">
-   Particle picking
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../particle_picking.html">
-     Particle Picking
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../2D_classification.html">
-     2D Classification
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="blob_picking.html">
-     blob_picking
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="template_picking.html">
-     template_picking
+    <a class="reference internal" href="blob_template_picking.html">
+     Blob and Template Picking
     </a>
    </li>
    <li class="toctree-l2">
@@ -285,8 +253,13 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
    <li class="toctree-l2">
+    <a class="reference internal" href="extract_particles.html">
+     Extract Boxed Particles
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="2D_classification.html">
-     2D_classification
+     2D Classification
     </a>
    </li>
    <li class="toctree-l2">
@@ -300,8 +273,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="3D_reconstruction.html">
    3D reconstruction
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -313,7 +286,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="3D_classification.html">
-     3D_classification
+     3D Classification
     </a>
    </li>
    <li class="toctree-l2">
@@ -337,8 +310,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="Software.html">
    Software
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -346,6 +319,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="acquire_sdf.html">
      acquire_sdf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="workstations_getting_started.html">
+     Getting started on Das Lab Workstations
     </a>
    </li>
    <li class="toctree-l2">
