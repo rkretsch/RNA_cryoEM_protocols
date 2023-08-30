@@ -1,4 +1,4 @@
-# RNA anlysis
+# RNA analysis
 
 :::{dropdown} {material-regular}`percent` Bioanalyzer
 
